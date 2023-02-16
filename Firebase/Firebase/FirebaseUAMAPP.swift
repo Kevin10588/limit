@@ -27,8 +27,8 @@ struct FirebaseTest: App {
           NavigationView{
               switch sessionService.state{
               case .loggedIn:
-                  HomeView()
-                      .environmentObject(sessionService)
+                      LimitTabView()
+                          .environmentObject(sessionService)
               case .loggedOut:
                   LoginView()
               }

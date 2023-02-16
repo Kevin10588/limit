@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B9AF5D8299C385A0040E5B1 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9AF5D7299C385A0040E5B1 /* TimerView.swift */; };
+		0B9AF5DA299C386E0040E5B1 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9AF5D9299C386E0040E5B1 /* ProfileView.swift */; };
 		4D17BE122996DD60004A8EED /* ForgotPasswordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D17BE112996DD60004A8EED /* ForgotPasswordService.swift */; };
 		4D17BE152996FE3F004A8EED /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D17BE142996FE3F004A8EED /* ForgotPasswordViewModel.swift */; };
 		4D8E834F2993124E00C1156E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D8E834D2993124E00C1156E /* Main.storyboard */; };
@@ -23,7 +25,7 @@
 		4D8E8376299387AC00C1156E /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8E8375299387AC00C1156E /* ButtonView.swift */; };
 		4D8E837A29939F5300C1156E /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8E837929939F5300C1156E /* RegisterView.swift */; };
 		4D8E837C2994592700C1156E /* CloseModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8E837B2994592700C1156E /* CloseModifier.swift */; };
-		4D8E838029945F4500C1156E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8E837F29945F4500C1156E /* HomeView.swift */; };
+		4D8E838029945F4500C1156E /* LimitTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8E837F29945F4500C1156E /* LimitTabView.swift */; };
 		4D8E83842994627A00C1156E /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8E83832994627A00C1156E /* ForgotPasswordView.swift */; };
 		4D8E83872994691D00C1156E /* RegistrationDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8E83862994691D00C1156E /* RegistrationDetails.swift */; };
 		4D8E838A299469BA00C1156E /* RegistrationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8E8389299469BA00C1156E /* RegistrationService.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B9AF5D7299C385A0040E5B1 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		0B9AF5D9299C386E0040E5B1 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		4D17BE112996DD60004A8EED /* ForgotPasswordService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordService.swift; sourceTree = "<group>"; };
 		4D17BE142996FE3F004A8EED /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
 		4D8E83442993124E00C1156E /* FirebaseTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,7 +57,7 @@
 		4D8E8375299387AC00C1156E /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		4D8E837929939F5300C1156E /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		4D8E837B2994592700C1156E /* CloseModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseModifier.swift; sourceTree = "<group>"; };
-		4D8E837F29945F4500C1156E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4D8E837F29945F4500C1156E /* LimitTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitTabView.swift; sourceTree = "<group>"; };
 		4D8E83832994627A00C1156E /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		4D8E83862994691D00C1156E /* RegistrationDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationDetails.swift; sourceTree = "<group>"; };
 		4D8E8389299469BA00C1156E /* RegistrationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationService.swift; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 				4D8E83522993124F00C1156E /* LaunchScreen.storyboard */,
 				4D8E836029932E9300C1156E /* GoogleService-Info.plist */,
 				4D8E83552993124F00C1156E /* Info.plist */,
+				0B9AF5D7299C385A0040E5B1 /* TimerView.swift */,
+				0B9AF5D9299C386E0040E5B1 /* ProfileView.swift */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -216,7 +222,7 @@
 		4D8E837E29945F2D00C1156E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4D8E837F29945F4500C1156E /* HomeView.swift */,
+				4D8E837F29945F4500C1156E /* LimitTabView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -399,9 +405,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B9AF5D8299C385A0040E5B1 /* TimerView.swift in Sources */,
 				4D8E839E2994A13300C1156E /* LoginService.swift in Sources */,
 				4D8E839B2994A0DE00C1156E /* ModelCredentials.swift in Sources */,
-				4D8E838029945F4500C1156E /* HomeView.swift in Sources */,
+				4D8E838029945F4500C1156E /* LimitTabView.swift in Sources */,
 				4D8E837429937F4A00C1156E /* InputPasswordView.swift in Sources */,
 				4D8E836329932F3900C1156E /* FirebaseUAMAPP.swift in Sources */,
 				4D8E837229937C9600C1156E /* PreviewLayoutComponentModifier.swift in Sources */,
@@ -410,6 +417,7 @@
 				4D8E83A12994A39E00C1156E /* LoginViewModel.swift in Sources */,
 				4D8E839829948E3700C1156E /* SessionService.swift in Sources */,
 				4D8E837A29939F5300C1156E /* RegisterView.swift in Sources */,
+				0B9AF5DA299C386E0040E5B1 /* ProfileView.swift in Sources */,
 				4D8E836B299333FD00C1156E /* LoginView.swift in Sources */,
 				4D17BE122996DD60004A8EED /* ForgotPasswordService.swift in Sources */,
 				4D8E8376299387AC00C1156E /* ButtonView.swift in Sources */,
