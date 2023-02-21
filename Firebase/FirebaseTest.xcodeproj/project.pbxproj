@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0B9AF5D8299C385A0040E5B1 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9AF5D7299C385A0040E5B1 /* TimerView.swift */; };
 		0B9AF5DA299C386E0040E5B1 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9AF5D9299C386E0040E5B1 /* ProfileView.swift */; };
+		0B9F592E29A51FC100E0497E /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9F592D29A51FC100E0497E /* TimerModel.swift */; };
+		0B9F593029A5285B00E0497E /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9F592F29A5285B00E0497E /* TimerManager.swift */; };
 		4D17BE122996DD60004A8EED /* ForgotPasswordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D17BE112996DD60004A8EED /* ForgotPasswordService.swift */; };
 		4D17BE152996FE3F004A8EED /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D17BE142996FE3F004A8EED /* ForgotPasswordViewModel.swift */; };
 		4D8E834F2993124E00C1156E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D8E834D2993124E00C1156E /* Main.storyboard */; };
@@ -41,6 +43,8 @@
 /* Begin PBXFileReference section */
 		0B9AF5D7299C385A0040E5B1 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		0B9AF5D9299C386E0040E5B1 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		0B9F592D29A51FC100E0497E /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
+		0B9F592F29A5285B00E0497E /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
 		4D17BE112996DD60004A8EED /* ForgotPasswordService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordService.swift; sourceTree = "<group>"; };
 		4D17BE142996FE3F004A8EED /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
 		4D8E83442993124E00C1156E /* FirebaseTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +133,8 @@
 				4D8E83552993124F00C1156E /* Info.plist */,
 				0B9AF5D7299C385A0040E5B1 /* TimerView.swift */,
 				0B9AF5D9299C386E0040E5B1 /* ProfileView.swift */,
+				0B9F592D29A51FC100E0497E /* TimerModel.swift */,
+				0B9F592F29A5285B00E0497E /* TimerManager.swift */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -414,7 +420,9 @@
 				4D8E837229937C9600C1156E /* PreviewLayoutComponentModifier.swift in Sources */,
 				4D8E838A299469BA00C1156E /* RegistrationService.swift in Sources */,
 				4D8E837C2994592700C1156E /* CloseModifier.swift in Sources */,
+				0B9F593029A5285B00E0497E /* TimerManager.swift in Sources */,
 				4D8E83A12994A39E00C1156E /* LoginViewModel.swift in Sources */,
+				0B9F592E29A51FC100E0497E /* TimerModel.swift in Sources */,
 				4D8E839829948E3700C1156E /* SessionService.swift in Sources */,
 				4D8E837A29939F5300C1156E /* RegisterView.swift in Sources */,
 				0B9AF5DA299C386E0040E5B1 /* ProfileView.swift in Sources */,
