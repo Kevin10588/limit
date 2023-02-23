@@ -12,36 +12,34 @@ struct ProfileView: View {
     @EnvironmentObject var sessionService: SessionServiceImpl
     
     var body: some View {
-        VStack(alignment: .leading,
-               spacing: 400){
-
-
-
+        NavigationView {
             VStack(alignment: .leading,
-                   spacing: 16){
+                   spacing: 400){
 
-                Text("First Name:\(sessionService.userDetails?.firstName ?? "N/A")")
-                Text("Last Name: \(sessionService.userDetails?.lastName ?? "N/A")")
-                Text("Occupation: \(sessionService.userDetails?.occupation ?? "N/A")")
 
+
+                VStack(alignment: .leading,
+                       spacing: 16){
+
+                    Text("First Name:\(sessionService.userDetails?.firstName ?? "N/A")")
+                    Text("Last Name: \(sessionService.userDetails?.lastName ?? "N/A")")
+                    Text("Occupation: \(sessionService.userDetails?.occupation ?? "N/A")")
+
+                }
+                ButtonView(title: "Logout"){
+                    sessionService.logout()
+
+                }
             }
-            ButtonView(title: "Logout"){
-                sessionService.logout()
-
-            }
+                   .navigationTitle(sessionService.userDetails?.firstName ??  "None")
         }
-
                .padding(.horizontal, 16)
-
-            .navigationTitle(sessionService.userDetails?.firstName ??  "None")
         }
     }
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView {
             ProfileView()
                 .environmentObject(SessionServiceImpl())
-        }
     }
 }

@@ -87,6 +87,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B63106429A545CB00C56F1A /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				0B63106729A5461D00C56F1A /* Mangers */,
+				0B63106629A545FB00C56F1A /* Model */,
+				0B63106529A545E700C56F1A /* View */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		0B63106529A545E700C56F1A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0B9AF5D7299C385A0040E5B1 /* TimerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0B63106629A545FB00C56F1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0B9F592D29A51FC100E0497E /* TimerModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0B63106729A5461D00C56F1A /* Mangers */ = {
+			isa = PBXGroup;
+			children = (
+				0B9F592F29A5285B00E0497E /* TimerManager.swift */,
+			);
+			path = Mangers;
+			sourceTree = "<group>";
+		};
 		4D17BE102996DD35004A8EED /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,10 +165,7 @@
 				4D8E83522993124F00C1156E /* LaunchScreen.storyboard */,
 				4D8E836029932E9300C1156E /* GoogleService-Info.plist */,
 				4D8E83552993124F00C1156E /* Info.plist */,
-				0B9AF5D7299C385A0040E5B1 /* TimerView.swift */,
 				0B9AF5D9299C386E0040E5B1 /* ProfileView.swift */,
-				0B9F592D29A51FC100E0497E /* TimerModel.swift */,
-				0B9F592F29A5285B00E0497E /* TimerManager.swift */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -147,6 +178,7 @@
 				4D8E837D29945F1A00C1156E /* Home */,
 				4D8E837729939F1900C1156E /* Register */,
 				4D8E836629932FC600C1156E /* Login */,
+				0B63106429A545CB00C56F1A /* Timer */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -590,7 +622,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -620,7 +652,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

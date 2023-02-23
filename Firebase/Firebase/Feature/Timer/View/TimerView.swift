@@ -24,7 +24,7 @@ struct TimerView: View {
                 Image(systemName: timerManager.timerMode == .running ? "pause.circle.fill" : "play.circle.fill")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 180, height: 180)
+                    .frame(width: 100, height: 100)
                     .foregroundColor(.blue)
                     .onTapGesture {
                         if self.timerManager.timerMode == .initial {
@@ -47,11 +47,12 @@ struct TimerView: View {
                             Text("\(self.availableMinutes[$0]) min")
                         }
                     }
+                    .pickerStyle(.wheel)
                     .labelsHidden()
                 }
                 Spacer()
             }
-            .navigationTitle("Set Limit")
+            .navigationTitle("Set Timer")
         }
         
     }
