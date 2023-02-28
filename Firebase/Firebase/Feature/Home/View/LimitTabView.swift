@@ -19,6 +19,11 @@ struct LimitTabView: View {
                     Image(systemName: "clock.circle")
                     Text("Timer")
                 }
+            InfoView()
+                .tabItem{
+                    Image(systemName: "house.circle")
+                    Text("Home")
+                }
             ProfileView()
                 .tabItem{
                     Image(systemName: "person.crop.circle")

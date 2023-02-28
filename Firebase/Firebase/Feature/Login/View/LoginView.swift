@@ -17,7 +17,22 @@ struct LoginView: View {
     
     var body: some View {
         VStack(spacing: 16){
-            
+            HStack {
+                Image("logo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 26, alignment: .center)
+                Text("Limit")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.accentColor)
+            }
+            HStack {
+                Text("Login:")
+                    .font(.headline)
+                    .multilineTextAlignment(.leading)
+                Spacer()
+            }
             VStack(spacing: 16){
                 
                 InputTextFieldView(text: $vm.credentials.email,
@@ -29,9 +44,6 @@ struct LoginView: View {
                                    placeholder: "Password",
                                    sfSymbol: "lock")
             }
-            
-           
-            
             VStack(spacing: 16){
                 
                 ButtonView(title: "Login"){
@@ -67,7 +79,6 @@ struct LoginView: View {
             
         }
         .padding(.horizontal, 15)
-        .navigationTitle("Login")
         .alert(isPresented: $vm.hasError, content: {
             
             if case .failed(let error) = vm.state {
@@ -85,8 +96,6 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView{
             LoginView()
-        }
     }
 }

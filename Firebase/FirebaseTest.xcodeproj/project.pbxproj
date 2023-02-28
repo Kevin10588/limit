@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B7343CE29AE988700ADEF3D /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7343CD29AE988700ADEF3D /* InfoView.swift */; };
+		0B74E00F29AE962300B774F5 /* NotificationsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B74E00E29AE962300B774F5 /* NotificationsHandler.swift */; };
 		0B9AF5D8299C385A0040E5B1 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9AF5D7299C385A0040E5B1 /* TimerView.swift */; };
 		0B9AF5DA299C386E0040E5B1 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9AF5D9299C386E0040E5B1 /* ProfileView.swift */; };
 		0B9F592E29A51FC100E0497E /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9F592D29A51FC100E0497E /* TimerModel.swift */; };
@@ -41,6 +43,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B7343CD29AE988700ADEF3D /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		0B74E00E29AE962300B774F5 /* NotificationsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsHandler.swift; sourceTree = "<group>"; };
 		0B9AF5D7299C385A0040E5B1 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		0B9AF5D9299C386E0040E5B1 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		0B9F592D29A51FC100E0497E /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
@@ -90,6 +94,7 @@
 		0B63106429A545CB00C56F1A /* Timer */ = {
 			isa = PBXGroup;
 			children = (
+				0B74E01029AE965A00B774F5 /* Notification */,
 				0B63106729A5461D00C56F1A /* Mangers */,
 				0B63106629A545FB00C56F1A /* Model */,
 				0B63106529A545E700C56F1A /* View */,
@@ -119,6 +124,14 @@
 				0B9F592F29A5285B00E0497E /* TimerManager.swift */,
 			);
 			path = Mangers;
+			sourceTree = "<group>";
+		};
+		0B74E01029AE965A00B774F5 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				0B74E00E29AE962300B774F5 /* NotificationsHandler.swift */,
+			);
+			path = Notification;
 			sourceTree = "<group>";
 		};
 		4D17BE102996DD35004A8EED /* Service */ = {
@@ -160,12 +173,12 @@
 				4D8E836C2993359600C1156E /* Base */,
 				4D8E836529932FA800C1156E /* Feature */,
 				4D8E836229932F3900C1156E /* FirebaseUAMAPP.swift */,
+				0B9AF5D9299C386E0040E5B1 /* ProfileView.swift */,
 				4D8E834D2993124E00C1156E /* Main.storyboard */,
 				4D8E83502993124F00C1156E /* Assets.xcassets */,
 				4D8E83522993124F00C1156E /* LaunchScreen.storyboard */,
 				4D8E836029932E9300C1156E /* GoogleService-Info.plist */,
 				4D8E83552993124F00C1156E /* Info.plist */,
-				0B9AF5D9299C386E0040E5B1 /* ProfileView.swift */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -261,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				4D8E837F29945F4500C1156E /* LimitTabView.swift */,
+				0B7343CD29AE988700ADEF3D /* InfoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -449,6 +463,7 @@
 				4D8E838029945F4500C1156E /* LimitTabView.swift in Sources */,
 				4D8E837429937F4A00C1156E /* InputPasswordView.swift in Sources */,
 				4D8E836329932F3900C1156E /* FirebaseUAMAPP.swift in Sources */,
+				0B74E00F29AE962300B774F5 /* NotificationsHandler.swift in Sources */,
 				4D8E837229937C9600C1156E /* PreviewLayoutComponentModifier.swift in Sources */,
 				4D8E838A299469BA00C1156E /* RegistrationService.swift in Sources */,
 				4D8E837C2994592700C1156E /* CloseModifier.swift in Sources */,
@@ -460,6 +475,7 @@
 				0B9AF5DA299C386E0040E5B1 /* ProfileView.swift in Sources */,
 				4D8E836B299333FD00C1156E /* LoginView.swift in Sources */,
 				4D17BE122996DD60004A8EED /* ForgotPasswordService.swift in Sources */,
+				0B7343CE29AE988700ADEF3D /* InfoView.swift in Sources */,
 				4D8E8376299387AC00C1156E /* ButtonView.swift in Sources */,
 				4D8E8390299484AF00C1156E /* RegistrationViewModel.swift in Sources */,
 				4D8E83872994691D00C1156E /* RegistrationDetails.swift in Sources */,

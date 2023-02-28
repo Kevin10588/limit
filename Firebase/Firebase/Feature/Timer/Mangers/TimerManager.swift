@@ -14,6 +14,10 @@ class TimerManager: ObservableObject {
     
     @Published var secondsLeft = UserDefaults.standard.integer(forKey: "timerLength")
     
+    @State private var selectedDate = Date()
+    
+    let notify = NotificationHandler()
+    
     var timer = Timer()
     
     func setTimerLength(minutes: Int) {
@@ -24,9 +28,22 @@ class TimerManager: ObservableObject {
     
     func start() {
         timerMode = .running
+        // Allows timer to continue counting in background
+        var backgroundTask: UIBackgroundTaskIdentifier = .invalid
+        backgroundTask = UIApplication.shared.beginBackgroundTask(withName: "BackgroundTask") {
+            UIApplication.shared.endBackgroundTask(backgroundTask)
+                    backgroundTask = .invalid
+        }
+        
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { timer in
             if self.secondsLeft == 0 {
                 self.reset()
+                self.notify.sendNotification(
+                    date: Date(),
+                    type: "time",
+                    timeInterval: 0.1,
+                    title: "Limit",
+                    body: "Time is up!")
             }
             self.secondsLeft -= 1
         })
@@ -42,3 +59,4 @@ class TimerManager: ObservableObject {
         timer.invalidate()
     }
 }
+
