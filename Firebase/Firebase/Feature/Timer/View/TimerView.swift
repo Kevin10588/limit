@@ -14,7 +14,7 @@ struct TimerView: View {
     @State var selectedPickerIndex = 0
     
     let availableMinutes = Array(1...59)
-    
+        
     var body: some View {
         NavigationView {
             VStack {

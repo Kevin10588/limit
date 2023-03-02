@@ -11,6 +11,8 @@ struct ProfileView: View {
     
     @EnvironmentObject var sessionService: SessionServiceImpl
     
+    let notify = NotificationHandler()
+    
     var body: some View {
         NavigationView {
             VStack(alignment: .leading,
@@ -37,9 +39,15 @@ struct ProfileView: View {
                         Text("\(sessionService.userDetails?.occupation ?? "N/A")")
                     }
                 }
-                ButtonView(title: "Logout"){
-                    sessionService.logout()
+                VStack {
+                    ButtonView(title: "Enable Notifications"){
+                        notify.askPermission()
 
+                    }
+                    ButtonView(title: "Logout"){
+                        sessionService.logout()
+
+                    }
                 }
             }
                    .navigationTitle("Profile Settings")
