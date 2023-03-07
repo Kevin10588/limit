@@ -21,7 +21,7 @@ struct TimerView: View {
                 Text(secondsToMinutes(seconds:timerManager.secondsLeft))
                     .font(.system(size: 80))
                     .padding(.top, 80)
-                Image(systemName: timerManager.timerMode == .running ? "pause.circle.fill" : "play.circle.fill")
+                Image(systemName: timerManager.timerMode == .running ? "alarm.waves.left.and.right.fill" : "play.circle.fill")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 100, height: 100)
@@ -30,7 +30,7 @@ struct TimerView: View {
                         if self.timerManager.timerMode == .initial {
                             self.timerManager.setTimerLength(minutes: self.availableMinutes[self.selectedPickerIndex]*60)
                         }
-                        self.timerManager.timerMode == .running ? self.timerManager.pause() : self.timerManager.start()
+                        self.timerManager.timerMode == .running ? print("running") : self.timerManager.start()
                     }
                 if timerManager.timerMode == .paused {
                     Image(systemName: "arrowshape.turn.up.backward.2")
