@@ -10,6 +10,8 @@ import SwiftUI
 struct ProfileView: View {
     
     @EnvironmentObject var sessionService: SessionServiceImpl
+    @State var shouldShowImagePicker = false
+    @State var image:UIImage?
     
     let notify = NotificationHandler()
     
@@ -19,13 +21,25 @@ struct ProfileView: View {
                    spacing: 400){
                 HStack{
                     
-                    Button(action: {}) {
-                        Image(systemName: "person.crop.circle.badge.plus")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(height: 55, alignment: .center)
-                            .foregroundColor(Color("modeColor"))
-                    }
+                    Button(action: {
+                        shouldShowImagePicker.toggle()
+                    }) {
+                        VStack{
+                            if let image = self.image{
+                                Image(uiImage: image)
+                                    .resizable()
+                                    .frame(width: 64, height: 64)
+                                    .scaledToFill()
+                                    .cornerRadius(64)
+                                
+                            }else{
+                                
+                                Image(systemName: "person.crop.circle.badge.plus")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(height: 55, alignment: .center)
+                                    .foregroundColor(Color("modeColor"))
+                            }}}
 
                     VStack(alignment: .leading,
                            spacing: 16) {
@@ -51,7 +65,11 @@ struct ProfileView: View {
                 }
             }
                    .navigationTitle("Profile Settings")
+                   .fullScreenCover(isPresented: $shouldShowImagePicker){
+                       ImagePicker(image: $image)
+                   }
         }
+            
                .padding(.horizontal, 16)
         }
     }
