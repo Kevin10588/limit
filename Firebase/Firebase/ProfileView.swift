@@ -13,7 +13,7 @@ struct ProfileView: View {
     @State var shouldShowImagePicker = false
     @State var image:UIImage?
     
-    let notify = NotificationHandler()
+    
     
     var body: some View {
         NavigationView {
@@ -53,15 +53,9 @@ struct ProfileView: View {
                         Text("\(sessionService.userDetails?.occupation ?? "N/A")")
                     }
                 }
-                VStack {
-                    ButtonView(title: "Enable Notifications"){
-                        notify.askPermission()
-
-                    }
                     ButtonView(title: "Logout"){
                         sessionService.logout()
 
-                    }
                 }
             }
                    .navigationTitle("Profile Settings")
