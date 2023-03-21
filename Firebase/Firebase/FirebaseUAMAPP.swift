@@ -22,7 +22,7 @@ struct FirebaseTest: App {
   @StateObject var sessionService = SessionServiceImpl()
     
     let notify = NotificationHandler()
-    
+    //Initiates permission request if it has not been accepted yet
     init() {
         notify.askPermission()
     }
