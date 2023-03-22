@@ -40,7 +40,6 @@
 		4D8E839B2994A0DE00C1156E /* ModelCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8E839A2994A0DE00C1156E /* ModelCredentials.swift */; };
 		4D8E839E2994A13300C1156E /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8E839D2994A13300C1156E /* LoginService.swift */; };
 		4D8E83A12994A39E00C1156E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8E83A02994A39E00C1156E /* LoginViewModel.swift */; };
-		4DD2A43829BD7664000FD9C9 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2A43729BD7664000FD9C9 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,7 +75,7 @@
 		4D8E839A2994A0DE00C1156E /* ModelCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCredentials.swift; sourceTree = "<group>"; };
 		4D8E839D2994A13300C1156E /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		4D8E83A02994A39E00C1156E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		4DD2A43729BD7664000FD9C9 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		65A08DCB29C046F4002341BE /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TutorialViewController.swift; path = Firebase/Feature/Tutorial/TutorialViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +154,7 @@
 		4D8E833B2993124E00C1156E = {
 			isa = PBXGroup;
 			children = (
+				65A08DCB29C046F4002341BE /* TutorialViewController.swift */,
 				4D8E83462993124E00C1156E /* Firebase */,
 				4D8E83452993124E00C1156E /* Products */,
 				4D8E838B2994802200C1156E /* Frameworks */,
@@ -175,7 +175,6 @@
 				4D8E836C2993359600C1156E /* Base */,
 				4D8E836529932FA800C1156E /* Feature */,
 				4D8E836229932F3900C1156E /* FirebaseUAMAPP.swift */,
-				4DD2A43729BD7664000FD9C9 /* ImagePicker.swift */,
 				0B9AF5D9299C386E0040E5B1 /* ProfileView.swift */,
 				4D8E834D2993124E00C1156E /* Main.storyboard */,
 				4D8E83502993124F00C1156E /* Assets.xcassets */,
@@ -463,7 +462,6 @@
 				0B9AF5D8299C385A0040E5B1 /* TimerView.swift in Sources */,
 				4D8E839E2994A13300C1156E /* LoginService.swift in Sources */,
 				4D8E839B2994A0DE00C1156E /* ModelCredentials.swift in Sources */,
-				4DD2A43829BD7664000FD9C9 /* ImagePicker.swift in Sources */,
 				4D8E838029945F4500C1156E /* LimitTabView.swift in Sources */,
 				4D8E837429937F4A00C1156E /* InputPasswordView.swift in Sources */,
 				4D8E836329932F3900C1156E /* FirebaseUAMAPP.swift in Sources */,
