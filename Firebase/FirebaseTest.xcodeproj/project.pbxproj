@@ -41,6 +41,7 @@
 		4D8E839E2994A13300C1156E /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8E839D2994A13300C1156E /* LoginService.swift */; };
 		4D8E83A12994A39E00C1156E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8E83A02994A39E00C1156E /* LoginViewModel.swift */; };
 		4DD2A43829BD7664000FD9C9 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2A43729BD7664000FD9C9 /* ImagePicker.swift */; };
+		4DFCD3FE29D2C8AB00C8A65C /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFCD3FD29D2C8AB00C8A65C /* Test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,7 @@
 		4D8E839D2994A13300C1156E /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		4D8E83A02994A39E00C1156E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		4DD2A43729BD7664000FD9C9 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		4DFCD3FD29D2C8AB00C8A65C /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 				4D8E836529932FA800C1156E /* Feature */,
 				4D8E836229932F3900C1156E /* FirebaseUAMAPP.swift */,
 				4DD2A43729BD7664000FD9C9 /* ImagePicker.swift */,
+				4DFCD3FD29D2C8AB00C8A65C /* Test.swift */,
 				0B9AF5D9299C386E0040E5B1 /* ProfileView.swift */,
 				4D8E834D2993124E00C1156E /* Main.storyboard */,
 				4D8E83502993124F00C1156E /* Assets.xcassets */,
@@ -477,6 +480,7 @@
 				4D8E839829948E3700C1156E /* SessionService.swift in Sources */,
 				4D8E837A29939F5300C1156E /* RegisterView.swift in Sources */,
 				0B9AF5DA299C386E0040E5B1 /* ProfileView.swift in Sources */,
+				4DFCD3FE29D2C8AB00C8A65C /* Test.swift in Sources */,
 				4D8E836B299333FD00C1156E /* LoginView.swift in Sources */,
 				4D17BE122996DD60004A8EED /* ForgotPasswordService.swift in Sources */,
 				0B7343CE29AE988700ADEF3D /* InfoView.swift in Sources */,
