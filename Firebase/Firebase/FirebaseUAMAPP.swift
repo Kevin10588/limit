@@ -21,7 +21,12 @@ struct FirebaseTest: App {
   @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
   @StateObject var sessionService = SessionServiceImpl()
     
-
+    let notify = NotificationHandler()
+    //Initiates permission request if it has not been accepted yet
+    init() {
+        notify.askPermission()
+    }
+    
   var body: some Scene {
       WindowGroup {
           NavigationView{

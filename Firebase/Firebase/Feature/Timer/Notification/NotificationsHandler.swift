@@ -4,12 +4,11 @@
 //
 //  Created by Angel Martinez on 2/28/23.
 //
-import SwiftUI
+
 import Foundation
 import UserNotifications
 
 class NotificationHandler: NSObject, UNUserNotificationCenterDelegate {
-    
     func askPermission() {
         UNUserNotificationCenter.current()
             .requestAuthorization(options:[.alert,.badge, .sound])
