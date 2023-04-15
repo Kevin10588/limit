@@ -12,6 +12,7 @@ struct TimerView: View {
     @ObservedObject var timerManager = TimerManager()
     
     @State var selectedPickerIndex = 0
+    @State private var showingGamePromptAlert = false
     
     let availableMinutes = Array(1...59)
         
@@ -49,6 +50,22 @@ struct TimerView: View {
                     }
                     .pickerStyle(.wheel)
                     .labelsHidden()
+                }
+                
+                // After user starts the timer, then show the Button that allows them to extend time
+                // Wouldn't make sense to always have it visible when timer is in initial state
+                if timerManager.timerMode == .running {
+                    ButtonView(title: "Extend Time") {
+                        showingGamePromptAlert = true
+                         
+                    }
+                    .alert("Select which game you'd like to play in order to extend your time:", isPresented: $showingGamePromptAlert) {
+                        Button("Cancel", role: .cancel) {  }
+                        Button("Math Game") {  }
+                        Button("Tic Tac Toe") {  }
+                        Button("Anthony Game") {  }
+                    }
+                    
                 }
                 Spacer()
             }

@@ -1,12 +1,23 @@
 //
-//  LimitTabView.swift
+//  MathGameView.swift
 //  FirebaseTest
 //
-//  Created by Angel Martinez on 2/14/23.
+//  Created by David De La Cruz on 4/14/23.
 //
 
 import SwiftUI
 
+
+//struct MathGameView: View {
+//
+//}
+
+
+
+
+//------------------------------
+
+/*
 struct ProfileView: View {
     
     @EnvironmentObject var sessionService: SessionServiceImpl
@@ -83,3 +94,4 @@ struct ProfileView_Previews: PreviewProvider {
                 .environmentObject(SessionServiceImpl())
     }
 }
+*/
