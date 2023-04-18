@@ -47,8 +47,6 @@ class TimerManager: ObservableObject {
             }
             self.secondsLeft -= 1
         })
-        
-        
     }
     
     func reset() {
