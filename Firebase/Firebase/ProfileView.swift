@@ -12,7 +12,6 @@ struct ProfileView: View {
     @EnvironmentObject var sessionService: SessionServiceImpl
     @State var shouldShowImagePicker = false
     @State var image:UIImage?
-    @State private var showingAlert = false
     
     
     
@@ -54,17 +53,9 @@ struct ProfileView: View {
                         Text("\(sessionService.userDetails?.occupation ?? "N/A")")
                     }
                 }
-                VStack {
-                    ButtonView(title: "App tutorial") {
-                        showingAlert = true
-                    }
-                    .alert("Set the timer for how long you'd like to procrastinate for. Once the timer is up, non-productive apps will be blocked!", isPresented: $showingAlert) {
-                        Button("OK", role: .cancel) { }
-                    }
-                    
                     ButtonView(title: "Logout"){
-                            sessionService.logout()
-                    }
+                        sessionService.logout()
+
                 }
             }
                    .navigationTitle("Profile Settings")
