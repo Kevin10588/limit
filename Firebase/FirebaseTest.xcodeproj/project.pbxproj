@@ -42,8 +42,6 @@
 		4D8E83A12994A39E00C1156E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8E83A02994A39E00C1156E /* LoginViewModel.swift */; };
 		4DD2A43829BD7664000FD9C9 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2A43729BD7664000FD9C9 /* ImagePicker.swift */; };
 		4DFCD3FE29D2C8AB00C8A65C /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFCD3FD29D2C8AB00C8A65C /* Test.swift */; };
-		65AE897F29EA3E7200170099 /* MathGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AE897E29EA3E7200170099 /* MathGameView.swift */; };
-		65AE898129EA3F5D00170099 /* MathGameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AE898029EA3F5D00170099 /* MathGameManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,8 +79,6 @@
 		4D8E83A02994A39E00C1156E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		4DD2A43729BD7664000FD9C9 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		4DFCD3FD29D2C8AB00C8A65C /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
-		65AE897E29EA3E7200170099 /* MathGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathGameView.swift; sourceTree = "<group>"; };
-		65AE898029EA3F5D00170099 /* MathGameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathGameManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,7 +192,6 @@
 		4D8E836529932FA800C1156E /* Feature */ = {
 			isa = PBXGroup;
 			children = (
-				65AE897929EA371400170099 /* Games */,
 				4D8E839129948CF700C1156E /* Session */,
 				4D8E83812994623B00C1156E /* Forgot Password */,
 				4D8E837D29945F1A00C1156E /* Home */,
@@ -388,31 +383,6 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		65AE897929EA371400170099 /* Games */ = {
-			isa = PBXGroup;
-			children = (
-				65AE897D29EA3E5B00170099 /* MathGameManager */,
-				65AE897A29EA371400170099 /* View */,
-			);
-			path = Games;
-			sourceTree = "<group>";
-		};
-		65AE897A29EA371400170099 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				65AE897E29EA3E7200170099 /* MathGameView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		65AE897D29EA3E5B00170099 /* MathGameManager */ = {
-			isa = PBXGroup;
-			children = (
-				65AE898029EA3F5D00170099 /* MathGameManager.swift */,
-			);
-			path = MathGameManager;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -512,12 +482,10 @@
 				0B9AF5DA299C386E0040E5B1 /* ProfileView.swift in Sources */,
 				4DFCD3FE29D2C8AB00C8A65C /* Test.swift in Sources */,
 				4D8E836B299333FD00C1156E /* LoginView.swift in Sources */,
-				65AE898129EA3F5D00170099 /* MathGameManager.swift in Sources */,
 				4D17BE122996DD60004A8EED /* ForgotPasswordService.swift in Sources */,
 				0B7343CE29AE988700ADEF3D /* InfoView.swift in Sources */,
 				4D8E8376299387AC00C1156E /* ButtonView.swift in Sources */,
 				4D8E8390299484AF00C1156E /* RegistrationViewModel.swift in Sources */,
-				65AE897F29EA3E7200170099 /* MathGameView.swift in Sources */,
 				4D8E83872994691D00C1156E /* RegistrationDetails.swift in Sources */,
 				4D17BE152996FE3F004A8EED /* ForgotPasswordViewModel.swift in Sources */,
 				4D8E83842994627A00C1156E /* ForgotPasswordView.swift in Sources */,
