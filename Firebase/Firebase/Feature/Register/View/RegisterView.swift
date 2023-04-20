@@ -13,6 +13,8 @@ struct RegisterView: View {
     @StateObject private var vm = RegistrationViewModelImpl(service: RegistrationServiceImpl()
     )
     
+    @State private var isSelected: Bool = false
+    
     var body: some View {
         
         NavigationView{
@@ -49,6 +51,18 @@ struct RegisterView: View {
                                        sfSymbol: nil)
                     
                 }
+                
+                Toggle("Child Account", isOn: $isSelected).tint(.blue)
+                
+                if !isSelected {
+                    Text("Child accounts can share their phone usage with their parents").multilineTextAlignment(.center).foregroundColor(.gray)
+                } else {
+                    InputTextFieldView(text: $vm.userDetails.parentEmail,
+                                       placeholder: "Parent's Email",
+                                       keyboardType: .emailAddress,
+                                       sfSymbol: "envelope")
+                }
+                
                 
                 ButtonView(title: "Sign up")
                 {

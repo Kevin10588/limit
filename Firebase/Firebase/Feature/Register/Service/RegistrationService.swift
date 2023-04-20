@@ -18,6 +18,7 @@ enum RegistrationKeys: String{
     case firstName
     case lastName
     case occupation
+    case parentEmail
 }
 
 protocol RegistrationService{
@@ -43,6 +44,7 @@ final class RegistrationServiceImpl: RegistrationService{
                                 
                                 let values = [RegistrationKeys.firstName.rawValue: details.firstName,
                                               RegistrationKeys.lastName.rawValue: details.lastName,
+                                              RegistrationKeys.parentEmail.rawValue: details.parentEmail,
                                               RegistrationKeys.occupation.rawValue: details.occupation] as [String : Any]
                                 
                                 Database.database()

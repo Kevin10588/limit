@@ -14,6 +14,7 @@ struct RegistrationDetails{
     var firstName: String
     var lastName: String
     var occupation: String
+    var parentEmail: String
 }
 
 extension RegistrationDetails{
@@ -23,7 +24,8 @@ extension RegistrationDetails{
                             password: "",
                             firstName: "",
                             lastName: "",
-                            occupation: "")
+                            occupation: "",
+                            parentEmail: "")
         
     }
 }
