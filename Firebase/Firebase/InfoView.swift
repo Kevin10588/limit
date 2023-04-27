@@ -17,7 +17,7 @@ struct InfoView: View {
         NavigationView {
             List{
                 ForEach(model.items, id: \.id) { item in
-                    NavigationLink(destination: ReminderDetailView(title: item.title, description: item.title)){
+                    NavigationLink(destination: ReminderDetailView(title: item.title, description: item.description)){
                         VStack(alignment: .leading){
                             Text(item.title)
                                 .font(.title)
