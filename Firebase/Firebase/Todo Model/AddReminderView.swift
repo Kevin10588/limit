@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct AddReminderView: View {
-    
-    @State var title = ""
-    @State var description = ""
+    @StateObject var model = AddItemViewModel()
+
     var body: some View {
         NavigationView {
             Form {
-                TextField("Assign Task", text: $title)
-                TextField("Description", text: $description)
+                TextField("Assign Task", text: $model.title)
+                TextField("Description", text: $model.description)
+                
+                Button("Create", action: model.create)
                 
             }
             .navigationTitle("Create TODO")

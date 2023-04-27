@@ -11,16 +11,17 @@ struct InfoView: View {
     
     @EnvironmentObject var sessionService: SessionServiceImpl
     @State var showSheet = false
+    @StateObject var model = ContentViewModel()
     
     var body: some View {
         NavigationView {
             List{
-                ForEach(0..<15, id: \.self) { number in
-                    NavigationLink(destination: ReminderDetailView(title: "Title \(number)", description: "Description \(number)")){
+                ForEach(model.items, id: \.id) { item in
+                    NavigationLink(destination: ReminderDetailView(title: item.title, description: item.title)){
                         VStack(alignment: .leading){
-                            Text("Titles \(number)")
+                            Text(item.title)
                                 .font(.title)
-                            Text("Description \(number)")
+                            Text(item.description)
                         }
                     }
                 }
@@ -37,7 +38,13 @@ struct InfoView: View {
 
             }
             .listStyle(.plain)
-            .sheet(isPresented: $showSheet, content: {AddReminderView()})
+            .sheet(isPresented: $showSheet, onDismiss: model.loaditems, content:{
+                AddReminderView()
+                
+            })
+            .onAppear(){
+                model.loaditems()
+            }
         }
     }
 }
