@@ -50,18 +50,23 @@ struct RegisterView: View {
                                        keyboardType: .namePhonePad,
                                        sfSymbol: nil)
                     
+                    InputTextFieldView(text: $vm.userDetails.description,
+                                       placeholder: "Description",
+                                       keyboardType: .namePhonePad,
+                                       sfSymbol: nil)
+                    
                 }
                 
-                Toggle("Child Account", isOn: $isSelected).tint(.blue)
-                
-                if !isSelected {
-                    Text("Child accounts can share their phone usage with their parents").multilineTextAlignment(.center).foregroundColor(.gray)
-                } else {
-                    InputTextFieldView(text: $vm.userDetails.parentEmail,
-                                       placeholder: "Parent's Email",
-                                       keyboardType: .emailAddress,
-                                       sfSymbol: "envelope")
-                }
+//                Toggle("Child Account", isOn: $isSelected).tint(.blue)
+//
+//                if !isSelected {
+//                    Text("Child accounts can share their phone usage with their parents").multilineTextAlignment(.center).foregroundColor(.gray)
+//                } else {
+//                    InputTextFieldView(text: $vm.userDetails.parentEmail,
+//                                       placeholder: "Parent's Email",
+//                                       keyboardType: .emailAddress,
+//                                       sfSymbol: "envelope")
+//                }
                 
                 
                 ButtonView(title: "Sign up")

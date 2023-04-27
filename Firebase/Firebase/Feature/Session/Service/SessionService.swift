@@ -69,13 +69,18 @@ func handleRefresh(with uid: String){
                   let value = snapshot.value as? NSDictionary,
                   let firstName = value[RegistrationKeys.firstName.rawValue] as? String,
                   let lastName = value[RegistrationKeys.lastName.rawValue] as? String,
+                  let description = value[RegistrationKeys.description.rawValue] as? String,
+                  let title = value[RegistrationKeys.title.rawValue] as? String,
                   let occupation = value[RegistrationKeys.occupation.rawValue] as? String else{
                 return
             }
             DispatchQueue.main.async {
                 self.userDetails = SessionUserDetails(firstName: firstName,
                                                       lastName: lastName,
-                                                      occupation: occupation)
+                                                      occupation: occupation,
+                                                      description: description,
+                                                      title: title
+                )
             }
         }
     }

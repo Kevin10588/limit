@@ -11,4 +11,6 @@ struct SessionUserDetails{
     let firstName: String
     let lastName: String
     let occupation: String
+    let description: String
+    let title: String
 }
