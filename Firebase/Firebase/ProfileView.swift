@@ -57,6 +57,8 @@ struct ProfileView: View {
                         sessionService.logout()
 
                 }
+                   
+            
             }
                    .navigationTitle("Profile Settings")
                    .fullScreenCover(isPresented: $shouldShowImagePicker){
