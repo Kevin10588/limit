@@ -50,6 +50,18 @@
 		4DD1270E29FA20E600538A44 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4DD1270D29FA20E600538A44 /* FirebaseFirestoreSwift */; };
 		4DD1271029FA312F00538A44 /* AddItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD1270F29FA312F00538A44 /* AddItemViewModel.swift */; };
 		4DD2A43829BD7664000FD9C9 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2A43729BD7664000FD9C9 /* ImagePicker.swift */; };
+		92F975E02A01A1C2005552FB /* EmojiMemoryGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F975D92A01A1C1005552FB /* EmojiMemoryGameView.swift */; };
+		92F975E12A01A1C2005552FB /* MemorizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F975DA2A01A1C1005552FB /* MemorizerApp.swift */; };
+		92F975E22A01A1C2005552FB /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F975DB2A01A1C1005552FB /* MemoryGame.swift */; };
+		92F975E32A01A1C2005552FB /* Pie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F975DC2A01A1C2005552FB /* Pie.swift */; };
+		92F975E42A01A1C2005552FB /* Cardify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F975DD2A01A1C2005552FB /* Cardify.swift */; };
+		92F975E52A01A1C2005552FB /* AspectVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F975DE2A01A1C2005552FB /* AspectVGrid.swift */; };
+		92F975E62A01A1C2005552FB /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F975DF2A01A1C2005552FB /* EmojiMemoryGame.swift */; };
+		92F975EA2A01A329005552FB /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F975E92A01A329005552FB /* Score.swift */; };
+		92F975EC2A01AD79005552FB /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F975EB2A01AD79005552FB /* GameView.swift */; };
+		92F975F02A01AFE5005552FB /* MathGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F975EF2A01AFE5005552FB /* MathGameView.swift */; };
+		92F975F22A01B104005552FB /* MathGameAnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F975F12A01B104005552FB /* MathGameAnswerButton.swift */; };
+		92F975F62A01B6B4005552FB /* ReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F975F52A01B6B4005552FB /* ReminderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +105,18 @@
 		4DD1270B29FA1DD800538A44 /* FirebaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseError.swift; sourceTree = "<group>"; };
 		4DD1270F29FA312F00538A44 /* AddItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewModel.swift; sourceTree = "<group>"; };
 		4DD2A43729BD7664000FD9C9 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		92F975D92A01A1C1005552FB /* EmojiMemoryGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmojiMemoryGameView.swift; path = Firebase/Feature/Register/Games/Matching/EmojiMemoryGameView.swift; sourceTree = SOURCE_ROOT; };
+		92F975DA2A01A1C1005552FB /* MemorizerApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MemorizerApp.swift; path = Firebase/Feature/Register/Games/Matching/MemorizerApp.swift; sourceTree = SOURCE_ROOT; };
+		92F975DB2A01A1C1005552FB /* MemoryGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MemoryGame.swift; path = Firebase/Feature/Register/Games/Matching/MemoryGame.swift; sourceTree = SOURCE_ROOT; };
+		92F975DC2A01A1C2005552FB /* Pie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pie.swift; path = Firebase/Feature/Register/Games/Matching/Pie.swift; sourceTree = SOURCE_ROOT; };
+		92F975DD2A01A1C2005552FB /* Cardify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cardify.swift; path = Firebase/Feature/Register/Games/Matching/Cardify.swift; sourceTree = SOURCE_ROOT; };
+		92F975DE2A01A1C2005552FB /* AspectVGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AspectVGrid.swift; path = Firebase/Feature/Register/Games/Matching/AspectVGrid.swift; sourceTree = SOURCE_ROOT; };
+		92F975DF2A01A1C2005552FB /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmojiMemoryGame.swift; path = Firebase/Feature/Register/Games/Matching/EmojiMemoryGame.swift; sourceTree = SOURCE_ROOT; };
+		92F975E92A01A329005552FB /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		92F975EB2A01AD79005552FB /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameView.swift; path = Firebase/Feature/Register/Games/Matching/GameView.swift; sourceTree = SOURCE_ROOT; };
+		92F975EF2A01AFE5005552FB /* MathGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathGameView.swift; sourceTree = "<group>"; };
+		92F975F12A01B104005552FB /* MathGameAnswerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathGameAnswerButton.swift; sourceTree = "<group>"; };
+		92F975F52A01B6B4005552FB /* ReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +205,7 @@
 		4D8E833B2993124E00C1156E = {
 			isa = PBXGroup;
 			children = (
+				92F975E92A01A329005552FB /* Score.swift */,
 				4D8E83462993124E00C1156E /* Firebase */,
 				4D8E83452993124E00C1156E /* Products */,
 				4D8E838B2994802200C1156E /* Frameworks */,
@@ -220,7 +245,9 @@
 			children = (
 				4D8E839129948CF700C1156E /* Session */,
 				4D8E83812994623B00C1156E /* Forgot Password */,
+				92F975F42A01B681005552FB /* Reminder */,
 				4D8E837D29945F1A00C1156E /* Home */,
+				92F975D82A01A0D4005552FB /* Games */,
 				4D8E837729939F1900C1156E /* Register */,
 				4D8E836629932FC600C1156E /* Login */,
 				0B63106429A545CB00C56F1A /* Timer */,
@@ -231,6 +258,7 @@
 		4D8E836629932FC600C1156E /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				92F975F32A01B674005552FB /* New Group */,
 				4D8E839F2994A38300C1156E /* ViewModel */,
 				4D8E839C2994A11C00C1156E /* Service */,
 				4D8E83992994A0BB00C1156E /* Model */,
@@ -421,6 +449,55 @@
 			path = "Todo Model";
 			sourceTree = "<group>";
 		};
+		92F975D82A01A0D4005552FB /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				92F975EE2A01AFA9005552FB /* MathGame */,
+				92F975ED2A01AF9A005552FB /* Matching */,
+			);
+			name = Games;
+			path = Register/Games;
+			sourceTree = "<group>";
+		};
+		92F975ED2A01AF9A005552FB /* Matching */ = {
+			isa = PBXGroup;
+			children = (
+				92F975EB2A01AD79005552FB /* GameView.swift */,
+				92F975DE2A01A1C2005552FB /* AspectVGrid.swift */,
+				92F975DD2A01A1C2005552FB /* Cardify.swift */,
+				92F975DF2A01A1C2005552FB /* EmojiMemoryGame.swift */,
+				92F975D92A01A1C1005552FB /* EmojiMemoryGameView.swift */,
+				92F975DA2A01A1C1005552FB /* MemorizerApp.swift */,
+				92F975DB2A01A1C1005552FB /* MemoryGame.swift */,
+				92F975DC2A01A1C2005552FB /* Pie.swift */,
+			);
+			path = Matching;
+			sourceTree = "<group>";
+		};
+		92F975EE2A01AFA9005552FB /* MathGame */ = {
+			isa = PBXGroup;
+			children = (
+				92F975EF2A01AFE5005552FB /* MathGameView.swift */,
+				92F975F12A01B104005552FB /* MathGameAnswerButton.swift */,
+			);
+			path = MathGame;
+			sourceTree = "<group>";
+		};
+		92F975F32A01B674005552FB /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		92F975F42A01B681005552FB /* Reminder */ = {
+			isa = PBXGroup;
+			children = (
+				92F975F52A01B6B4005552FB /* ReminderView.swift */,
+			);
+			path = Reminder;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -505,18 +582,27 @@
 			files = (
 				0B9AF5D8299C385A0040E5B1 /* TimerView.swift in Sources */,
 				4D8E839E2994A13300C1156E /* LoginService.swift in Sources */,
+				92F975E32A01A1C2005552FB /* Pie.swift in Sources */,
+				92F975E02A01A1C2005552FB /* EmojiMemoryGameView.swift in Sources */,
+				92F975F02A01AFE5005552FB /* MathGameView.swift in Sources */,
 				4DD1270829FA161800538A44 /* FirebaseService.swift in Sources */,
 				4D8E839B2994A0DE00C1156E /* ModelCredentials.swift in Sources */,
+				92F975E42A01A1C2005552FB /* Cardify.swift in Sources */,
+				92F975E22A01A1C2005552FB /* MemoryGame.swift in Sources */,
+				92F975E52A01A1C2005552FB /* AspectVGrid.swift in Sources */,
 				0BAAB73129FA0D3500834BD4 /* ReminderDetailView.swift in Sources */,
 				4DD2A43829BD7664000FD9C9 /* ImagePicker.swift in Sources */,
 				4D8E838029945F4500C1156E /* LimitTabView.swift in Sources */,
+				92F975E12A01A1C2005552FB /* MemorizerApp.swift in Sources */,
 				4D8E837429937F4A00C1156E /* InputPasswordView.swift in Sources */,
 				4D8E836329932F3900C1156E /* FirebaseUAMAPP.swift in Sources */,
 				0B74E00F29AE962300B774F5 /* NotificationsHandler.swift in Sources */,
 				4D8E837229937C9600C1156E /* PreviewLayoutComponentModifier.swift in Sources */,
+				92F975F62A01B6B4005552FB /* ReminderView.swift in Sources */,
 				4D8E838A299469BA00C1156E /* RegistrationService.swift in Sources */,
 				4D8E837C2994592700C1156E /* CloseModifier.swift in Sources */,
 				0B9F593029A5285B00E0497E /* TimerManager.swift in Sources */,
+				92F975EC2A01AD79005552FB /* GameView.swift in Sources */,
 				4D8E83A12994A39E00C1156E /* LoginViewModel.swift in Sources */,
 				4DD1270C29FA1DD800538A44 /* FirebaseError.swift in Sources */,
 				0BAAB72F29FA097500834BD4 /* AddReminderView.swift in Sources */,
@@ -526,13 +612,16 @@
 				0B9AF5DA299C386E0040E5B1 /* ProfileView.swift in Sources */,
 				4DD1270A29FA16B200538A44 /* TODOItem.swift in Sources */,
 				4D8E836B299333FD00C1156E /* LoginView.swift in Sources */,
+				92F975F22A01B104005552FB /* MathGameAnswerButton.swift in Sources */,
 				4D17BE122996DD60004A8EED /* ForgotPasswordService.swift in Sources */,
 				4DD1271029FA312F00538A44 /* AddItemViewModel.swift in Sources */,
 				0B7343CE29AE988700ADEF3D /* InfoView.swift in Sources */,
+				92F975E62A01A1C2005552FB /* EmojiMemoryGame.swift in Sources */,
 				4D8E8376299387AC00C1156E /* ButtonView.swift in Sources */,
 				4DD1270629FA15DB00538A44 /* ContentViewModel.swift in Sources */,
 				4D8E8390299484AF00C1156E /* RegistrationViewModel.swift in Sources */,
 				4D8E83872994691D00C1156E /* RegistrationDetails.swift in Sources */,
+				92F975EA2A01A329005552FB /* Score.swift in Sources */,
 				4D17BE152996FE3F004A8EED /* ForgotPasswordViewModel.swift in Sources */,
 				4D8E83842994627A00C1156E /* ForgotPasswordView.swift in Sources */,
 				4D8E839429948D9800C1156E /* SessionUserDetails.swift in Sources */,

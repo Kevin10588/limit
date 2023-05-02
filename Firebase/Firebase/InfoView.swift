@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct InfoView: View {
-    
     @EnvironmentObject var sessionService: SessionServiceImpl
     @State var showSheet = false
     @StateObject var model = ContentViewModel()
+    // creating the score instance
+    @ObservedObject var score = Score()
     
     var body: some View {
         NavigationView {
@@ -47,9 +48,21 @@ struct InfoView: View {
             }
         }
     }
+    func badgeView() -> some View {
+            if score.currentScore > 100 {
+                return BadgeView(color: .blue, text: "Very Productive", score: score)
+            } else if score.currentScore > 30 {
+                return BadgeView(color: .orange, text: "Productive", score: score)
+            } else if score.currentScore > 15 {
+                return BadgeView(color: .green, text: "Doing Good", score: score)
+            } else if score.currentScore < 0 {
+                return BadgeView(color: .red, text: "Unproductive", score: score)
+            } else {
+                return BadgeView(color: .gray, text: "Focus", score: score)
+            }
+        }
 }
-        
-    
+
 struct InfoView_Previews: PreviewProvider {
     static var previews: some View {
             InfoView()
@@ -57,4 +70,18 @@ struct InfoView_Previews: PreviewProvider {
     }
 }
 
-
+//struct BadgeView: View {
+//    let color: Color
+//    let text: String
+//    let score : Score
+//
+//    var body: some View {
+//        Text(text)
+//            .font(.caption)
+//            .padding(6)
+//            .foregroundColor(.white)
+//            .background(color)
+//            .clipShape(Capsule())
+//    }
+//
+//}

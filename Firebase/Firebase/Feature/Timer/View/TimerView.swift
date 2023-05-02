@@ -10,6 +10,8 @@ import SwiftUI
 struct TimerView: View {
     
     @ObservedObject var timerManager = TimerManager()
+    let score : Score
+
     
     @State var selectedPickerIndex = 0
     
@@ -60,6 +62,6 @@ struct TimerView: View {
 
 struct TimerView_Previews: PreviewProvider {
     static var previews: some View {
-        TimerView()
+        TimerView(score:Score())
     }
 }

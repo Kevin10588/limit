@@ -10,19 +10,30 @@ import SwiftUI
 struct LimitTabView: View {
     
     @EnvironmentObject var sessionService: SessionServiceImpl
-
+    @State private var selectedDate = Date()
+    let notify = NotificationHandler()
+    
     var body: some View {
-        
         TabView {
-            InfoView()
+            TimerView(score: Score())
+                .tabItem{
+                    Image(systemName: "clock.circle")
+                    Text("Timer")
+                }
+            InfoView(score: Score())
                 .tabItem{
                     Image(systemName: "house.circle")
                     Text("Home")
                 }
-            TimerView()
+            ReminderView(score: Score())
                 .tabItem{
-                    Image(systemName: "clock.circle")
-                    Text("Timer")
+                    Image(systemName: "bell")
+                    Text("Reminders")
+                }
+            GameView()
+                .tabItem {
+                    Image(systemName: "gamecontroller")
+                    Text("Break Time")
                 }
             ProfileView()
                 .tabItem{
