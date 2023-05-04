@@ -62,6 +62,7 @@
 		92F975F02A01AFE5005552FB /* MathGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F975EF2A01AFE5005552FB /* MathGameView.swift */; };
 		92F975F22A01B104005552FB /* MathGameAnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F975F12A01B104005552FB /* MathGameAnswerButton.swift */; };
 		92F975F62A01B6B4005552FB /* ReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F975F52A01B6B4005552FB /* ReminderView.swift */; };
+		954F459E2A03567A00F914DA /* View in Resources */ = {isa = PBXBuildFile; fileRef = 954F459D2A03567A00F914DA /* View */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,6 +118,7 @@
 		92F975EF2A01AFE5005552FB /* MathGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathGameView.swift; sourceTree = "<group>"; };
 		92F975F12A01B104005552FB /* MathGameAnswerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathGameAnswerButton.swift; sourceTree = "<group>"; };
 		92F975F52A01B6B4005552FB /* ReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderView.swift; sourceTree = "<group>"; };
+		954F459D2A03567A00F914DA /* View */ = {isa = PBXFileReference; lastKnownFileType = folder; name = View; path = Firebase/Feature/Timer/View; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				92F975E92A01A329005552FB /* Score.swift */,
+				954F459D2A03567A00F914DA /* View */,
 				4D8E83462993124E00C1156E /* Firebase */,
 				4D8E83452993124E00C1156E /* Products */,
 				4D8E838B2994802200C1156E /* Frameworks */,
@@ -569,6 +572,7 @@
 				4D8E83542993124F00C1156E /* LaunchScreen.storyboard in Resources */,
 				4D8E836129932E9300C1156E /* GoogleService-Info.plist in Resources */,
 				4D8E83512993124F00C1156E /* Assets.xcassets in Resources */,
+				954F459E2A03567A00F914DA /* View in Resources */,
 				4D8E834F2993124E00C1156E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

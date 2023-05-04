@@ -12,7 +12,10 @@ class TimerManager: ObservableObject {
     
     @Published var timerMode: TimerMode = .initial
     
+    @Published var showButton = false
+    
     @Published var secondsLeft = UserDefaults.standard.integer(forKey: "timerLength")
+    
     
     @State private var selectedDate = Date()
     
@@ -28,6 +31,8 @@ class TimerManager: ObservableObject {
     
     func start() {
         timerMode = .running
+        // keeps the Good job button hidden while the timer is running
+        self.showButton = false
         // Allows timer to continue counting in background
         var backgroundTask: UIBackgroundTaskIdentifier = .invalid
         backgroundTask = UIApplication.shared.beginBackgroundTask(withName: "BackgroundTask") {
@@ -44,6 +49,8 @@ class TimerManager: ObservableObject {
                     timeInterval: 0.1,
                     title: "Limit",
                     body: "Time is up!")
+                // button to disable the screen view will appear once the timer hits 0
+                self.showButton = true
             }
             self.secondsLeft -= 1
         })
