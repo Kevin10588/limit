@@ -122,6 +122,7 @@ struct CardView: View {
     let card: MemoryGame<String>.Card
     
     @State private var animatedBonusRemaining: Double = 0
+    @State private var animated = true
     
     var body: some View {
         GeometryReader{geometry in
@@ -143,7 +144,7 @@ struct CardView: View {
                     .opacity(DrawingConstants.circleOpacity)
                 Text(card.content)
                     .rotationEffect(Angle.degrees(card.isMatched ? 360 : 0))
-                    .animation(Animation.linear(duration: 1).repeatForever(autoreverses: false))
+                    .animation(Animation.linear(duration: 1).repeatForever(autoreverses: false), value: animated)
                     .font(Font.system(size: DrawingConstants.fontSize))
                     .scaleEffect(scale(thatFits: geometry.size))
                 

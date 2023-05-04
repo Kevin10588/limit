@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct ReminderView: View {
-    @State private var selectedDate = Date()
-    @State private var scheduledDates: [Date: Bool] = [:]
-    let notify = NotificationHandler()
+
     // creating the score instance
     @ObservedObject var score = Score()
 
@@ -29,23 +27,7 @@ struct ReminderView: View {
                     .padding(.top)
             }
             .padding(.bottom)
-           
-            VStack {
-                //Spacer()
-                DatePicker("Pick a date:", selection: $selectedDate, in: Date()... )
-                Button("Schedule Reminder") {
-                    if scheduledDates[selectedDate] != true {
-                        notify.sendNotification(
-                            date: selectedDate,
-                            type: "date",
-                            title: "Limit",
-                            body: "Scheduled reminder!");
-                            scheduledDates[selectedDate] = true
-                    }
-                }
-            }
-            Spacer()
-            .padding(.vertical)
+            
             VStack {
             //Displays the score
                 ScoreView(score:score)

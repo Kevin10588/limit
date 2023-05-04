@@ -14,7 +14,7 @@
 		0B9F592E29A51FC100E0497E /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9F592D29A51FC100E0497E /* TimerModel.swift */; };
 		0B9F593029A5285B00E0497E /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9F592F29A5285B00E0497E /* TimerManager.swift */; };
 		0BAAB72F29FA097500834BD4 /* AddReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAAB72E29FA097500834BD4 /* AddReminderView.swift */; };
-		0BAAB73129FA0D3500834BD4 /* ReminderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAAB73029FA0D3500834BD4 /* ReminderDetailView.swift */; };
+		0BE1C8602A0324C0004B8BA1 /* ReminderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE1C85F2A0324C0004B8BA1 /* ReminderDetailView.swift */; };
 		4D17BE122996DD60004A8EED /* ForgotPasswordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D17BE112996DD60004A8EED /* ForgotPasswordService.swift */; };
 		4D17BE152996FE3F004A8EED /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D17BE142996FE3F004A8EED /* ForgotPasswordViewModel.swift */; };
 		4D8E834F2993124E00C1156E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D8E834D2993124E00C1156E /* Main.storyboard */; };
@@ -72,7 +72,7 @@
 		0B9F592D29A51FC100E0497E /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
 		0B9F592F29A5285B00E0497E /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
 		0BAAB72E29FA097500834BD4 /* AddReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderView.swift; sourceTree = "<group>"; };
-		0BAAB73029FA0D3500834BD4 /* ReminderDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDetailView.swift; sourceTree = "<group>"; };
+		0BE1C85F2A0324C0004B8BA1 /* ReminderDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDetailView.swift; sourceTree = "<group>"; };
 		4D17BE112996DD60004A8EED /* ForgotPasswordService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordService.swift; sourceTree = "<group>"; };
 		4D17BE142996FE3F004A8EED /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
 		4D8E83442993124E00C1156E /* FirebaseTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -178,10 +178,10 @@
 			path = Notification;
 			sourceTree = "<group>";
 		};
-		0BAAB72D29FA094F00834BD4 /* Views */ = {
+		0BE1C85E2A0324AA004B8BA1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0BAAB73029FA0D3500834BD4 /* ReminderDetailView.swift */,
+				0BE1C85F2A0324C0004B8BA1 /* ReminderDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -230,7 +230,7 @@
 				4DD2A43729BD7664000FD9C9 /* ImagePicker.swift */,
 				0B9AF5D9299C386E0040E5B1 /* ProfileView.swift */,
 				0B7343CD29AE988700ADEF3D /* InfoView.swift */,
-				0BAAB72D29FA094F00834BD4 /* Views */,
+				0BE1C85E2A0324AA004B8BA1 /* Views */,
 				4D8E834D2993124E00C1156E /* Main.storyboard */,
 				4D8E83502993124F00C1156E /* Assets.xcassets */,
 				4D8E83522993124F00C1156E /* LaunchScreen.storyboard */,
@@ -590,7 +590,6 @@
 				92F975E42A01A1C2005552FB /* Cardify.swift in Sources */,
 				92F975E22A01A1C2005552FB /* MemoryGame.swift in Sources */,
 				92F975E52A01A1C2005552FB /* AspectVGrid.swift in Sources */,
-				0BAAB73129FA0D3500834BD4 /* ReminderDetailView.swift in Sources */,
 				4DD2A43829BD7664000FD9C9 /* ImagePicker.swift in Sources */,
 				4D8E838029945F4500C1156E /* LimitTabView.swift in Sources */,
 				92F975E12A01A1C2005552FB /* MemorizerApp.swift in Sources */,
@@ -616,6 +615,7 @@
 				4D17BE122996DD60004A8EED /* ForgotPasswordService.swift in Sources */,
 				4DD1271029FA312F00538A44 /* AddItemViewModel.swift in Sources */,
 				0B7343CE29AE988700ADEF3D /* InfoView.swift in Sources */,
+				0BE1C8602A0324C0004B8BA1 /* ReminderDetailView.swift in Sources */,
 				92F975E62A01A1C2005552FB /* EmojiMemoryGame.swift in Sources */,
 				4D8E8376299387AC00C1156E /* ButtonView.swift in Sources */,
 				4DD1270629FA15DB00538A44 /* ContentViewModel.swift in Sources */,

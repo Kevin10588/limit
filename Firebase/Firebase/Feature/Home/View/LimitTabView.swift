@@ -20,15 +20,15 @@ struct LimitTabView: View {
                     Image(systemName: "clock.circle")
                     Text("Timer")
                 }
-            InfoView(score: Score())
-                .tabItem{
-                    Image(systemName: "house.circle")
-                    Text("Home")
-                }
             ReminderView(score: Score())
                 .tabItem{
                     Image(systemName: "bell")
                     Text("Reminders")
+                }
+            InfoView(score: Score())
+                .tabItem{
+                    Image(systemName: "house.circle")
+                    Text("Home")
                 }
             GameView()
                 .tabItem {
