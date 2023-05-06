@@ -14,6 +14,7 @@ struct InfoView: View {
     // creating the score instance
     @ObservedObject var score = Score()
     
+
     var body: some View {
         NavigationView {
             List{
@@ -25,6 +26,9 @@ struct InfoView: View {
                             Text(item.description)
                         }
                     }
+                }
+                .onDelete { indexSet in
+                    model.items.remove(atOffsets: indexSet)
                 }
             }
             .navigationTitle("TODO")

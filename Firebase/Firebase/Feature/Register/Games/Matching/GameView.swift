@@ -71,35 +71,3 @@ struct GameView: View {
     }
 }
 
-
-
-
-//struct GameView: View {
-//    @State private var isShowingGameView = false
-//
-//    var body: some View {
-//        NavigationView {
-//            VStack {
-//                List {
-//                    Group {
-//                        // Button that triggers the navigation to the game view
-//                        Button("Matching Game") {
-//                            isShowingGameView = true
-//                        }
-//                        Button("Math Game") {
-//                            isShowingGameView = true
-//                        }
-//
-//                        // Navigation link that displays the game view
-//                        NavigationLink(
-//                            destination: EmojiMemoryGameView(game: EmojiMemoryGame()),
-//                            isActive: $isShowingGameView,
-//                            label: { EmptyView() }
-//                        )
-//                    }
-//                    .navigationTitle("Games")
-//                }
-//            }
-//        }
-//    }
-//}

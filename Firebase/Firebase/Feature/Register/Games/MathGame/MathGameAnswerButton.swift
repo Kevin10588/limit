@@ -12,10 +12,11 @@ struct MathGameAnswerButton: View {
     
     var body: some View {
         Text("\(number)")
-            .frame(width: 80, height: 60)
+            .frame(width: 100, height: 60)
             .font(.system(size: 40 , weight: .bold))
             .foregroundColor(Color.white)
             .background(Color.blue)
+            .cornerRadius(30)
             .padding()
     }
 }
