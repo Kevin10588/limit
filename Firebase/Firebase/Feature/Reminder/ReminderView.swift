@@ -27,11 +27,15 @@ struct ReminderView: View {
                     .padding(.top)
             }
             .padding(.bottom)
+            Spacer()
             
+            Spacer()
             VStack {
-            //Displays the score
-                ScoreView(score:score)
+                //Displays the score
                 badgeView()
+                ScoreView(score:score)
+            }
+            .frame(height: 550, alignment: .center)
             Spacer()
             .padding(.vertical)
                 /// used for testing to add and remove from the score
@@ -45,18 +49,17 @@ struct ReminderView: View {
                 }
             }
         }
-    }
     func badgeView() -> some View {
             if score.currentScore > 100 {
-                return BadgeView(color: .blue, text: "Very Productive", score: score)
+                return BadgeView(color: .blue, text: "Very Productive",imageName: "Gold" , score: score)
             } else if score.currentScore > 30 {
-                return BadgeView(color: .orange, text: "Productive", score: score)
+                return BadgeView(color: .blue, text: "Productive", imageName: "Silver", score: score)
             } else if score.currentScore > 15 {
-                return BadgeView(color: .green, text: "Doing Good", score: score)
+                return BadgeView(color: .blue, text: "Doing Good", imageName: "Silver" , score: score)
             } else if score.currentScore < 0 {
-                return BadgeView(color: .red, text: "Unproductive", score: score)
+                return BadgeView(color: .red, text: "Unproductive", imageName: "logo" , score: score)
             } else {
-                return BadgeView(color: .gray, text: "Focus", score: score)
+                return BadgeView(color: .blue, text: "Focus!", imageName: "Bronze" , score: score)
             }
         }
 }
@@ -72,15 +75,25 @@ struct ReminderView_Previews: PreviewProvider {
 struct BadgeView: View {
     let color: Color
     let text: String
+    let imageName:String
     let score : Score
 
     var body: some View {
+        VStack{
+            Image(imageName)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 300, height: 300)
+                .cornerRadius(15)
+            
+            }
         Text(text)
-            .font(.caption)
-            .padding(6)
-            .foregroundColor(.white)
-            .background(color)
-            .clipShape(Capsule())
+        .font(.caption)
+        .padding(6)
+        .foregroundColor(.white)
+        .background(color)
+        .clipShape(Capsule())
+
     }
    
 }

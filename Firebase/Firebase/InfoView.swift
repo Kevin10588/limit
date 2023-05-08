@@ -54,15 +54,15 @@ struct InfoView: View {
     }
     func badgeView() -> some View {
             if score.currentScore > 100 {
-                return BadgeView(color: .blue, text: "Very Productive", score: score)
+                return BadgeView(color: .blue, text: "Very Productive", imageName: "Gold" , score: score)
             } else if score.currentScore > 30 {
-                return BadgeView(color: .orange, text: "Productive", score: score)
+                return BadgeView(color: .orange, text: "Productive", imageName: "Gold" ,score: score)
             } else if score.currentScore > 15 {
-                return BadgeView(color: .green, text: "Doing Good", score: score)
+                return BadgeView(color: .green, text: "Doing Good", imageName: "Gold" ,score: score)
             } else if score.currentScore < 0 {
-                return BadgeView(color: .red, text: "Unproductive", score: score)
+                return BadgeView(color: .red, text: "Unproductive", imageName: "Gold" ,score: score)
             } else {
-                return BadgeView(color: .gray, text: "Focus", score: score)
+                return BadgeView(color: .gray, text: "Focus", imageName: "Gold" ,score: score)
             }
         }
 }
@@ -74,18 +74,3 @@ struct InfoView_Previews: PreviewProvider {
     }
 }
 
-//struct BadgeView: View {
-//    let color: Color
-//    let text: String
-//    let score : Score
-//
-//    var body: some View {
-//        Text(text)
-//            .font(.caption)
-//            .padding(6)
-//            .foregroundColor(.white)
-//            .background(color)
-//            .clipShape(Capsule())
-//    }
-//
-//}

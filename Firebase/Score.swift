@@ -36,15 +36,15 @@ struct ScoreView: View {
     
     func badgeView() -> some View {
             if score.currentScore > 100 {
-                return BadgeView(color: .blue, text: "Productive", score: score)
+                return BadgeView(color: .blue, text: "Productive", imageName: "Gold" , score: score)
             } else if score.currentScore > 30 {
-                return BadgeView(color: .orange, text: "Focused", score: score)
+                return BadgeView(color: .orange, text: "Focused", imageName: "Gold" , score: score)
             } else if score.currentScore > 15 {
-                return BadgeView(color: .green, text: "Doing Good", score: score)
+                return BadgeView(color: .green, text: "Doing Good", imageName: "Gold" , score: score)
             } else if score.currentScore < 0 {
-                return BadgeView(color: .red, text: "Unproductive", score: score)
+                return BadgeView(color: .red, text: "Unproductive", imageName: "Gold" , score: score)
             } else {
-                return BadgeView(color: .gray, text: "Okay", score: score)
+                return BadgeView(color: .gray, text: "Okay", imageName: "Gold" ,score: score)
             }
         }
 }
