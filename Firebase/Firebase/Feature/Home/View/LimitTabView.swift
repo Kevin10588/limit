@@ -22,8 +22,8 @@ struct LimitTabView: View {
                 }
             ReminderView(score: Score())
                 .tabItem{
-                    Image(systemName: "bell")
-                    Text("Reminders")
+                    Image(systemName: "flag.checkered")
+                    Text("Score")
                 }
             InfoView(score: Score())
                 .tabItem{
