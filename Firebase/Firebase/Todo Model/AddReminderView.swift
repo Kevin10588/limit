@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AddReminderView: View {
-    @StateObject var model = AddItemViewModel()
+    @StateObject var viewModel = AddItemViewModel()
     
     @State private var selectedDate = Date()
     @State private var scheduledDates: [Date: Bool] = [:]
@@ -17,8 +17,8 @@ struct AddReminderView: View {
     var body: some View {
         NavigationView {
             Form {
-                TextField("Assign Task", text: $model.title)
-                TextField("Description", text: $model.description)
+                TextField("Assign Task", text: $viewModel.title)
+                TextField("Description", text: $viewModel.description)
                 
     
                 //Spacer()
@@ -38,9 +38,12 @@ struct AddReminderView: View {
             .navigationTitle("Create TODO")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("Done", action: model.create)
+                    Button("Done", action: viewModel.create)
                 }
             }
+        }
+        .alert(item: $viewModel.alertItem) { alertItem in
+            Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
         }
     }
 }
