@@ -192,6 +192,20 @@
 			path = Notification;
 			sourceTree = "<group>";
 		};
+		0B85DA6E2A0AEBC60070B5EA /* TodoModel */ = {
+			isa = PBXGroup;
+			children = (
+				4DD1270529FA15DB00538A44 /* ContentViewModel.swift */,
+				4DD1270729FA161800538A44 /* FirebaseService.swift */,
+				4DD1270929FA16B200538A44 /* TODOItem.swift */,
+				4DD1270B29FA1DD800538A44 /* FirebaseError.swift */,
+				4DD1270F29FA312F00538A44 /* AddItemViewModel.swift */,
+				0BAAB72E29FA097500834BD4 /* AddReminderView.swift */,
+				0BC34D962A09767A0070B3EB /* Alert.swift */,
+			);
+			path = TodoModel;
+			sourceTree = "<group>";
+		};
 		0BE1C85E2A0324AA004B8BA1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,7 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				4D7DBCD32A09D3940066AFE4 /* NewProfileView */,
-				4DD1270429FA15B800538A44 /* Todo Model */,
+				0B85DA6E2A0AEBC60070B5EA /* TodoModel */,
 				4D8E836C2993359600C1156E /* Base */,
 				4D8E836529932FA800C1156E /* Feature */,
 				4D8E836229932F3900C1156E /* FirebaseUAMAPP.swift */,
@@ -460,20 +474,6 @@
 				4D8E83A02994A39E00C1156E /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		4DD1270429FA15B800538A44 /* Todo Model */ = {
-			isa = PBXGroup;
-			children = (
-				4DD1270529FA15DB00538A44 /* ContentViewModel.swift */,
-				4DD1270729FA161800538A44 /* FirebaseService.swift */,
-				4DD1270929FA16B200538A44 /* TODOItem.swift */,
-				4DD1270B29FA1DD800538A44 /* FirebaseError.swift */,
-				4DD1270F29FA312F00538A44 /* AddItemViewModel.swift */,
-				0BAAB72E29FA097500834BD4 /* AddReminderView.swift */,
-				0BC34D962A09767A0070B3EB /* Alert.swift */,
-			);
-			path = "Todo Model";
 			sourceTree = "<group>";
 		};
 		92F975D82A01A0D4005552FB /* Games */ = {

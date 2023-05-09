@@ -23,8 +23,8 @@ struct ProfileImageView: View {
     var body: some View {
         
         NavigationView {
-            VStack(alignment: .leading,
-                   spacing:5) {
+            VStack(alignment: .leading) {
+                
                 if let imageUrl = imageUrl, let url = URL(string: imageUrl){
                     URLImage(url) { image in
                         image
@@ -55,7 +55,8 @@ struct ProfileImageView: View {
                        spacing:5){
                     
                     TextField("Type Something Here", text: $UserImage)
-                        .textFieldStyle(.roundedBorder)
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Color.blue))
+                        
                     
                     Button(action: {updateProfileImage()
                     }) {
