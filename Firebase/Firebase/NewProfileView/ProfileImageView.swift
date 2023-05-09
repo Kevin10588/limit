@@ -23,54 +23,54 @@ struct ProfileImageView: View {
     var body: some View {
         
         NavigationView {
-        VStack(alignment: .leading,
-               spacing:5) {
-            if let imageUrl = imageUrl {
-                URLImage(URL(string: imageUrl)!) { image in
-                    image
+            VStack(alignment: .leading,
+                   spacing:5) {
+                if let imageUrl = imageUrl, let url = URL(string: imageUrl){
+                    URLImage(url) { image in
+                        image
+                            .resizable()
+                            .frame(width: 128, height: 128)
+                            .scaledToFill()
+                            .clipShape(Circle())
+                    }
+                } else {
+                    Image(systemName: "person.circle")
                         .resizable()
-                        .frame(width: 128, height: 128)
-                        .scaledToFill()
+                        .frame(width: 64, height: 64)
+                        .scaledToFit()
                         .clipShape(Circle())
                 }
-            } else {
-                Image(systemName: "person.circle")
-                    .resizable()
-                    .frame(width: 64, height: 64)
-                    .scaledToFit()
-                    .clipShape(Circle())
+                
+                HStack {
+                    //Will show first name
+                    Text("\(sessionService.userDetails?.firstName ?? "N/A")")
+                    //Will show last name
+                    Text("\(sessionService.userDetails?.lastName ?? "N/A")")
+                }
+                //Will show occupation
+                Text("\(sessionService.userDetails?.occupation ?? "N/A")")
+                    .navigationTitle("Profile Settings")
+                
+                VStack(alignment: .leading,
+                       spacing:5){
+                    
+                    TextField("Type Something Here", text: $UserImage)
+                        .textFieldStyle(.roundedBorder)
+                    
+                    Button(action: {updateProfileImage()
+                    }) {
+                        Text("Update Profile Image")
+                    }
+                }
+                
             }
             
-            HStack {
-                //Will show first name
-                Text("\(sessionService.userDetails?.firstName ?? "N/A")")
-                //Will show last name
-                Text("\(sessionService.userDetails?.lastName ?? "N/A")")
-            }
-            //Will show occupation
-            Text("\(sessionService.userDetails?.occupation ?? "N/A")")
-                .navigationTitle("Profile Settings")
-                
-            VStack(alignment: .leading,
-                   spacing:5){
-                
-                TextField("Type Something Here", text: $UserImage)
-                    .textFieldStyle(.roundedBorder)
-                
-                Button(action: {updateProfileImage()
-                }) {
-                    Text("Update Profile Image")
-                }
-            }
+                   .padding(50)
             
         }
-      
-        .padding(50)
+        
         
     }
-    
-    
-}
     
     
     func paste(){
