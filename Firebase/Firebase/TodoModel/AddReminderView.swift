@@ -28,8 +28,8 @@ struct AddReminderView: View {
                         notify.sendNotification(
                             date: selectedDate,
                             type: "date",
-                            title: "Limit",
-                            body: "Scheduled reminder!");
+                            title: viewModel.title.isEmpty ? "Reminder" : viewModel.title,
+                            body: viewModel.description);
                             scheduledDates[selectedDate] = true
                     }
                 }
