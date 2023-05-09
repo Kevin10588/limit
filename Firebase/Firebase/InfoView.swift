@@ -31,7 +31,7 @@ struct InfoView: View {
                     model.items.remove(atOffsets: indexSet)
                 }
             }
-            .navigationTitle("TODO")
+            .navigationTitle("To-Do")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
