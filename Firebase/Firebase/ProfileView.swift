@@ -12,10 +12,13 @@ import FirebaseStorage
 
 struct ProfileView: View {
     
+    
     @EnvironmentObject var sessionService: SessionServiceImpl
     @State var shouldShowImagePicker = false
     @State var image:UIImage?
     @State var StatusMessage = ""
+    
+    @State private var showingAlert = false
 
     
     
@@ -23,6 +26,7 @@ struct ProfileView: View {
         NavigationView {
             VStack(alignment: .leading,
                    spacing: 400){
+                
                 HStack{
                     
                     Button(action: {
@@ -51,6 +55,9 @@ struct ProfileView: View {
 
                     VStack(alignment: .leading,
                            spacing: 16) {
+                        
+                        
+                        
                         HStack {
                             //Will show first name
                             Text("\(sessionService.userDetails?.firstName ?? "N/A")")
@@ -63,21 +70,26 @@ struct ProfileView: View {
                        
                         
                     }
+                    
+                    
                 }
                 
                 
                     ButtonView(title: "Logout"){
-                        sessionService.logout()
                         persistImageToStorage()
+                        sessionService.logout()
+                        
 
                 }
                 
             }
                    .navigationTitle("Profile Settings")
+            
                    .fullScreenCover(isPresented: $shouldShowImagePicker){
                        ImagePicker(image: $image)
                    }
             
+             
         }
             
                .padding(.horizontal, 16)
@@ -108,12 +120,14 @@ struct ProfileView: View {
      
                     self.StatusMessage = "Successfully stored image with url: \(url?.absoluteString ?? "")"
                     print(url?.absoluteString)
+                    
+                    guard let url = url else{ return}
+                   
                 }
             }
         }
     
     }
-
 
 
 
