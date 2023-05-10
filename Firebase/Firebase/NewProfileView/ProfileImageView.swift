@@ -23,39 +23,43 @@ struct ProfileImageView: View {
     var body: some View {
         
         NavigationView {
-            VStack(alignment: .leading) {
-                
-                if let imageUrl = imageUrl, let url = URL(string: imageUrl){
-                    URLImage(url) { image in
-                        image
+            VStack(alignment: .leading,spacing: 10) {
+                HStack(spacing: 10){
+                    if let imageUrl = imageUrl, let url = URL(string: imageUrl){
+                        URLImage(url) { image in
+                            image
+                                .resizable()
+                                .frame(width: 64, height: 64)
+                                .scaledToFill()
+                                .clipShape(Circle())
+                        }
+                    } else {
+                        Image(systemName: "person.circle")
                             .resizable()
-                            .frame(width: 128, height: 128)
-                            .scaledToFill()
-                            .clipShape(Circle())
+                            .frame(width: 64, height: 64)
                     }
-                } else {
-                    Image(systemName: "person.circle")
-                        .resizable()
-                        .frame(width: 64, height: 64)
-                        .scaledToFit()
-                        .clipShape(Circle())
+                    VStack(alignment: .leading,spacing: 5){
+                        HStack {
+                            //Will show first name
+                            Text("\(sessionService.userDetails?.firstName ?? "N/A")")
+                            //Will show last name
+                            Text("\(sessionService.userDetails?.lastName ?? "N/A")")
+                        }
+                        //Will show occupation
+                        Text("\(sessionService.userDetails?.occupation ?? "N/A")")
+                            .navigationTitle("Profile Settings")
+                    }
+            
                 }
                 
-                HStack {
-                    //Will show first name
-                    Text("\(sessionService.userDetails?.firstName ?? "N/A")")
-                    //Will show last name
-                    Text("\(sessionService.userDetails?.lastName ?? "N/A")")
-                }
-                //Will show occupation
-                Text("\(sessionService.userDetails?.occupation ?? "N/A")")
-                    .navigationTitle("Profile Settings")
+               .padding(.bottom,50)
                 
-                VStack(alignment: .leading,
-                       spacing:5){
-                    
-                    TextField("Type Something Here", text: $UserImage)
-                        .background(RoundedRectangle(cornerRadius: 10).fill(Color.blue))
+                VStack(alignment: .leading,spacing:20){
+                    TextField("", text: $UserImage)
+                        .placeholder(when: UserImage.isEmpty) {
+                            Text("Input URL of Image").foregroundColor(.white)
+                        }
+                        .background(RoundedRectangle(cornerRadius: 5).fill(Color.blue))
                         
                     
                     Button(action: {updateProfileImage()
@@ -63,14 +67,13 @@ struct ProfileImageView: View {
                         Text("Update Profile Image")
                     }
                 }
+                Spacer()
                 
             }
             
                    .padding(50)
             
         }
-        
-        
     }
     
     
@@ -103,3 +106,11 @@ struct ProfileImageView: View {
 }
 
 
+extension View{
+    func placeholder<Content: View>( when shouldShow: Bool, alignment: Alignment = .leading, @ViewBuilder placeholder: () -> Content) -> some View {
+        ZStack(alignment: alignment) {
+            placeholder().opacity(shouldShow ? 1 : 0)
+            self
+        }
+    }
+}
