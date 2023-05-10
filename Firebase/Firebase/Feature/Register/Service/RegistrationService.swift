@@ -21,6 +21,7 @@ enum RegistrationKeys: String{
     case parentEmail
     case description
     case title
+    case profileImageUrl
 }
 
 protocol RegistrationService{
@@ -49,7 +50,10 @@ final class RegistrationServiceImpl: RegistrationService{
                                               RegistrationKeys.parentEmail.rawValue: details.parentEmail,
                                               RegistrationKeys.description.rawValue: details.description,
                                               RegistrationKeys.title.rawValue: details.title,
+                                              RegistrationKeys.profileImageUrl.rawValue: details.profileImageUrl,
                                               RegistrationKeys.occupation.rawValue: details.occupation] as [String : Any]
+                                              
+                                              
                                 
                                 Database.database()
                                     .reference()

@@ -12,9 +12,22 @@ final class AddItemViewModel: ObservableObject {
     @Published var title = ""
     @Published var description = ""
     
+    @Published var alertItem: AlertItem?
+    
     private var cancellables = Set<AnyCancellable>()
     
+    var isValidForm: Bool {
+        guard !title.isEmpty && !description.isEmpty else {
+            alertItem = AlertContext.invalidform
+            return false
+        }
+        
+        return true
+    }
+    
     func create(){
+        
+        guard isValidForm else { return }
         
         let item = TODOItem(title: title, description: description)
         FirebaseService.create(item)

@@ -12,6 +12,7 @@ struct LimitTabView: View {
     @EnvironmentObject var sessionService: SessionServiceImpl
     @State private var selectedDate = Date()
     let notify = NotificationHandler()
+    let viewModel = ProfileViewModel()
     
     var body: some View {
         TabView {
@@ -22,8 +23,8 @@ struct LimitTabView: View {
                 }
             ReminderView(score: Score())
                 .tabItem{
-                    Image(systemName: "bell")
-                    Text("Reminders")
+                    Image(systemName: "flag.checkered")
+                    Text("Score")
                 }
             InfoView(score: Score())
                 .tabItem{
@@ -35,7 +36,8 @@ struct LimitTabView: View {
                     Image(systemName: "gamecontroller")
                     Text("Break Time")
                 }
-            ProfileView()
+            ProfileView1(viewModel: viewModel)
+               // ProfileView()
                 .tabItem{
                     Image(systemName: "person.crop.circle")
                     Text("Profile")
