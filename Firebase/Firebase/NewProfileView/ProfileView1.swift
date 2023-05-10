@@ -10,11 +10,19 @@ import FirebaseDatabase
 struct ProfileView1: View {
     @EnvironmentObject var sessionService: SessionServiceImpl
     @ObservedObject var viewModel: ProfileViewModel
+    @State private var showingAlert = false
     
     var body: some View {
         VStack {
             ProfileImageView(imageUrl: viewModel.profileImageUrl)
                 .padding(5)
+            
+            ButtonView(title: "App tutorial"){
+                showingAlert = true
+            }
+            .alert("1. Set timer for how long you'd like to be focused.\n\n 2. Productivity Score: add to score by using Timer, To-do list, and Reminders.\n\n 3. Create a To-do list while also setting reminders, so you are notified!\n\n 4. Break Time! Take a break and exxercise your mind by playing a matching card game, or a Math game.\n\n 5. Profile: Personlize your profile by adding a profile picture!", isPresented:$showingAlert) {
+                Button("OK", role: .cancel){}
+            }
             
                 ButtonView(title: "Logout"){
                  
@@ -22,6 +30,8 @@ struct ProfileView1: View {
                     
 
             }
+            
+           
         }
         .padding(30)
         .sheet(isPresented: $viewModel.isShowingImagePicker) {
