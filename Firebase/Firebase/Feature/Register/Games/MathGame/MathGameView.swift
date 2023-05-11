@@ -30,54 +30,60 @@ struct MathGameView: View {
     @State private var roundsPassed = 0
     @State public var allRoundsPassed = false
     @State private var intToAdd = 0
+    @State private var gameOver = false
+
     
     var body: some View {
-        VStack {
+        
+        if gameOver {
+            GameOverView(restartAction: restartGame)
             
-            // Equation that will be shown on top
-            Text("\(firstNumber) + \(secondNumber) = ?")
-                .font(.largeTitle)
-                .bold()
-            
-            // Top two answer buttons
-            HStack{
-                ForEach(0..<2) { index in
-                    Button {
-                        answerIsCorrect(answer: choiceArray[index])
-                        generateAnswers()
-                    } label:{
-                        MathGameAnswerButton(number: choiceArray[index])
+        } else {
+            VStack {
+                
+                // Equation that will be shown on top
+                Text("\(firstNumber) + \(secondNumber) = ?")
+                    .font(.largeTitle)
+                    .bold()
+                
+                // Top two answer buttons
+                HStack{
+                    ForEach(0..<2) { index in
+                        Button {
+                            answerIsCorrect(answer: choiceArray[index])
+                            generateAnswers()
+                        } label:{
+                            MathGameAnswerButton(number: choiceArray[index])
+                        }
                     }
                 }
-            }
-            
-            // Bottom two answer buttons
-            HStack{
-                ForEach(2..<4) { index in
-                    Button {
-                        answerIsCorrect(answer: choiceArray[index])
-                        generateAnswers()
-                    } label:{
-                        MathGameAnswerButton(number: choiceArray[index])
+                
+                // Bottom two answer buttons
+                HStack{
+                    ForEach(2..<4) { index in
+                        Button {
+                            answerIsCorrect(answer: choiceArray[index])
+                            generateAnswers()
+                        } label:{
+                            MathGameAnswerButton(number: choiceArray[index])
+                        }
                     }
                 }
-            }
-            
-            // Text on botttom to show how many rounds the user has left
-            Text("Rounds Remaining: \(rounds - roundsPassed)")
-                .font(.headline)
-                .bold()
-                .padding(.bottom)
-            
-            
-            
-        }.onAppear(perform: generateAnswers)
+                
+                // Text on botttom to show how many rounds the user has left
+                Text("Rounds Remaining: \(rounds - roundsPassed)")
+                    .font(.headline)
+                    .bold()
+                    .padding(.bottom)
+                
+            }.onAppear(perform: generateAnswers)
+        }
     }
-    
     // TODO: Added this in class to help set the 'allRoundsPassed' boolean
     func checkRoundsRemaining() {
         if rounds - roundsPassed == 0 {
             allRoundsPassed = true;
+            gameOver = true
         }
         else {
             allRoundsPassed = false;
@@ -120,5 +126,43 @@ struct MathGameView: View {
         
         answerList.append(correctAnswer)
         choiceArray = answerList.shuffled()
+        checkRoundsRemaining()
+    }
+    
+    func restartGame() {
+        correctAnswer = 0
+        choiceArray = [0, 1, 2, 3]
+        firstNumber = 0
+        secondNumber = 0
+        distanceFromAnswer = 0
+        lowerAnswerBoundary = 0
+        upperAnswerBoundary = 0
+        rounds = 3
+        roundsPassed = 0
+        allRoundsPassed = false
+        intToAdd = 0
+        gameOver = false
+        generateAnswers()
+    }
+    
+    
+}
+
+struct GameOverView: View {
+    let restartAction: () -> Void
+    
+    var body: some View {
+        VStack {
+            Text("Game Over!\n\n")
+                .font(.largeTitle)
+                .bold()
+                .padding()
+            Button("Restart Game", action: restartAction)
+                .padding()
+                .foregroundColor(.white)
+                .background(Color.blue)
+                .cornerRadius(10.0)
+        }
     }
 }
+

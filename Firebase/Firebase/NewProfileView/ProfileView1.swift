@@ -20,7 +20,7 @@ struct ProfileView1: View {
             ButtonView(title: "App tutorial"){
                 showingAlert = true
             }
-            .alert("1. Set timer for how long you'd like to be focused.\n\n 2. Productivity Score: add to score by using Timer, To-do list, and Reminders.\n\n 3. Create a To-do list while also setting reminders, so you are notified!\n\n 4. Break Time! Take a break and exxercise your mind by playing a matching card game, or a Math game.\n\n 5. Profile: Personlize your profile by adding a profile picture!", isPresented:$showingAlert) {
+            .alert("\n 1. Set a timer for how long you'd like to be focused and productive. Stay on Productive mode in order to be able to add to the score. Disabling will penalize you.\n\n 2. Add to the Productivity score by using the Timer, To-do list, and creating Reminders.\n\n 3. Create a To-do list while also having the ability to set reminders!\n\n 4. Break Time! Take a break and exercise your mind by playing a Matching card game, or a Math game.\n\n 5. Personlize your profile by adding a profile picture!", isPresented:$showingAlert) {
                 Button("OK", role: .cancel){}
             }
             
