@@ -27,6 +27,7 @@ struct LimitTabView: View {
                     Text("Score")
                 }
             InfoView(score: Score())
+            //NewView()
                 .tabItem{
                     Image(systemName: "house.circle")
                     Text("Home")

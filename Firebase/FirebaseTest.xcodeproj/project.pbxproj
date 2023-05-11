@@ -23,6 +23,12 @@
 		4D7DBCD92A09D4350066AFE4 /* ProfileView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7DBCD82A09D4350066AFE4 /* ProfileView1.swift */; };
 		4D7DBCDC2A09D5680066AFE4 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 4D7DBCDB2A09D5680066AFE4 /* URLImage */; };
 		4D7DBCDE2A09D5680066AFE4 /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = 4D7DBCDD2A09D5680066AFE4 /* URLImageStore */; };
+		4D7DBD082A0C9BB00066AFE4 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7DBD072A0C9BB00066AFE4 /* Todo.swift */; };
+		4D7DBD0C2A0C9CBC0066AFE4 /* NewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7DBD0B2A0C9CBC0066AFE4 /* NewView.swift */; };
+		4D7DBD0E2A0C9D560066AFE4 /* TodoEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7DBD0D2A0C9D560066AFE4 /* TodoEditView.swift */; };
+		4D7DBD102A0C9DF40066AFE4 /* TodoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7DBD0F2A0C9DF40066AFE4 /* TodoDetailsView.swift */; };
+		4D7DBD122A0C9E480066AFE4 /* TodosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7DBD112A0C9E480066AFE4 /* TodosViewModel.swift */; };
+		4D7DBD142A0C9E720066AFE4 /* TodoVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7DBD132A0C9E720066AFE4 /* TodoVIewModel.swift */; };
 		4D8E834F2993124E00C1156E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D8E834D2993124E00C1156E /* Main.storyboard */; };
 		4D8E83512993124F00C1156E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D8E83502993124F00C1156E /* Assets.xcassets */; };
 		4D8E83542993124F00C1156E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D8E83522993124F00C1156E /* LaunchScreen.storyboard */; };
@@ -86,6 +92,12 @@
 		4D7DBCD42A09D3BF0066AFE4 /* ProfileImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageUploader.swift; sourceTree = "<group>"; };
 		4D7DBCD62A09D3F70066AFE4 /* ProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
 		4D7DBCD82A09D4350066AFE4 /* ProfileView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView1.swift; sourceTree = "<group>"; };
+		4D7DBD072A0C9BB00066AFE4 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		4D7DBD0B2A0C9CBC0066AFE4 /* NewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewView.swift; sourceTree = "<group>"; };
+		4D7DBD0D2A0C9D560066AFE4 /* TodoEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoEditView.swift; sourceTree = "<group>"; };
+		4D7DBD0F2A0C9DF40066AFE4 /* TodoDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailsView.swift; sourceTree = "<group>"; };
+		4D7DBD112A0C9E480066AFE4 /* TodosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosViewModel.swift; sourceTree = "<group>"; };
+		4D7DBD132A0C9E720066AFE4 /* TodoVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoVIewModel.swift; sourceTree = "<group>"; };
 		4D8E83442993124E00C1156E /* FirebaseTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D8E834E2993124E00C1156E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D8E83502993124F00C1156E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -240,6 +252,19 @@
 			path = NewProfileView;
 			sourceTree = "<group>";
 		};
+		4D7DBD062A0C97C30066AFE4 /* UpdatedTodo */ = {
+			isa = PBXGroup;
+			children = (
+				4D7DBD0B2A0C9CBC0066AFE4 /* NewView.swift */,
+				4D7DBD072A0C9BB00066AFE4 /* Todo.swift */,
+				4D7DBD0D2A0C9D560066AFE4 /* TodoEditView.swift */,
+				4D7DBD0F2A0C9DF40066AFE4 /* TodoDetailsView.swift */,
+				4D7DBD112A0C9E480066AFE4 /* TodosViewModel.swift */,
+				4D7DBD132A0C9E720066AFE4 /* TodoVIewModel.swift */,
+			);
+			path = UpdatedTodo;
+			sourceTree = "<group>";
+		};
 		4D8E833B2993124E00C1156E = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +287,7 @@
 		4D8E83462993124E00C1156E /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
+				4D7DBD062A0C97C30066AFE4 /* UpdatedTodo */,
 				4D7DBCD32A09D3940066AFE4 /* NewProfileView */,
 				0B85DA6E2A0AEBC60070B5EA /* TodoModel */,
 				4D8E836C2993359600C1156E /* Base */,
@@ -616,7 +642,9 @@
 				4D8E839E2994A13300C1156E /* LoginService.swift in Sources */,
 				92F975E32A01A1C2005552FB /* Pie.swift in Sources */,
 				92F975E02A01A1C2005552FB /* EmojiMemoryGameView.swift in Sources */,
+				4D7DBD082A0C9BB00066AFE4 /* Todo.swift in Sources */,
 				0BC34D972A09767A0070B3EB /* Alert.swift in Sources */,
+				4D7DBD142A0C9E720066AFE4 /* TodoVIewModel.swift in Sources */,
 				4D7DBCD92A09D4350066AFE4 /* ProfileView1.swift in Sources */,
 				92F975F02A01AFE5005552FB /* MathGameView.swift in Sources */,
 				4DD1270829FA161800538A44 /* FirebaseService.swift in Sources */,
@@ -634,6 +662,7 @@
 				92F975F62A01B6B4005552FB /* ReminderView.swift in Sources */,
 				4D8E838A299469BA00C1156E /* RegistrationService.swift in Sources */,
 				4D8E837C2994592700C1156E /* CloseModifier.swift in Sources */,
+				4D7DBD0E2A0C9D560066AFE4 /* TodoEditView.swift in Sources */,
 				0B9F593029A5285B00E0497E /* TimerManager.swift in Sources */,
 				92F975EC2A01AD79005552FB /* GameView.swift in Sources */,
 				4D8E83A12994A39E00C1156E /* LoginViewModel.swift in Sources */,
@@ -645,6 +674,8 @@
 				0B9AF5DA299C386E0040E5B1 /* ProfileView.swift in Sources */,
 				4DD1270A29FA16B200538A44 /* TODOItem.swift in Sources */,
 				4D8E836B299333FD00C1156E /* LoginView.swift in Sources */,
+				4D7DBD0C2A0C9CBC0066AFE4 /* NewView.swift in Sources */,
+				4D7DBD102A0C9DF40066AFE4 /* TodoDetailsView.swift in Sources */,
 				92F975F22A01B104005552FB /* MathGameAnswerButton.swift in Sources */,
 				4D17BE122996DD60004A8EED /* ForgotPasswordService.swift in Sources */,
 				4DD1271029FA312F00538A44 /* AddItemViewModel.swift in Sources */,
@@ -652,6 +683,7 @@
 				0BE1C8602A0324C0004B8BA1 /* ReminderDetailView.swift in Sources */,
 				4D7DBCD52A09D3BF0066AFE4 /* ProfileImageUploader.swift in Sources */,
 				92F975E62A01A1C2005552FB /* EmojiMemoryGame.swift in Sources */,
+				4D7DBD122A0C9E480066AFE4 /* TodosViewModel.swift in Sources */,
 				4D8E8376299387AC00C1156E /* ButtonView.swift in Sources */,
 				4DD1270629FA15DB00538A44 /* ContentViewModel.swift in Sources */,
 				4D8E8390299484AF00C1156E /* RegistrationViewModel.swift in Sources */,
