@@ -18,6 +18,12 @@ enum Action {
 }
  
 struct TodoEditView: View {
+    
+    @StateObject var viewmodel = AddItemViewModel()
+    @State private var selectedDate = Date()
+    @State private var scheduledDates: [Date: Bool] = [:]
+    let notify = NotificationHandler()
+    
     @Environment(\.presentationMode) private var presentationMode
     @State var presentActionSheet = false
      
@@ -50,6 +56,18 @@ struct TodoEditView: View {
           Section(header: Text("Description")) {
             TextField("Description", text: $viewModel.task.description)
           }
+            //Spacer()
+            DatePicker("Pick a date:", selection: $selectedDate, in: Date()... )
+            Button("Schedule Reminder") {
+                if scheduledDates[selectedDate] != true {
+                    notify.sendNotification(
+                        date: selectedDate,
+                        type: "date",
+                        title: viewModel.title.isEmpty ? "Reminder" : viewModel.title,
+                        body: viewModel.description);
+                        scheduledDates[selectedDate] = true
+                }
+            }
            
           if mode == .edit {
             Section {

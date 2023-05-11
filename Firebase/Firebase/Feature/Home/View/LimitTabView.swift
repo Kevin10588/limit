@@ -26,8 +26,8 @@ struct LimitTabView: View {
                     Image(systemName: "flag.checkered")
                     Text("Score")
                 }
-            InfoView(score: Score())
-            //NewView()
+//            InfoView(score: Score())
+            NewView()
                 .tabItem{
                     Image(systemName: "house.circle")
                     Text("Home")

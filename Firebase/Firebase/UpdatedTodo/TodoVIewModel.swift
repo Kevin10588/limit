@@ -13,7 +13,10 @@ class TodoViewModel: ObservableObject {
    
   @Published var task: Todo1
   @Published var modified = false
-   
+    
+  @Published var title = ""
+  @Published var description = ""
+ 
   private var cancellables = Set<AnyCancellable>()
    
   init(task: Todo1 = Todo1(title: "", description: "")) {
