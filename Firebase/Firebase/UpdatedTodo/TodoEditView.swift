@@ -63,8 +63,8 @@ struct TodoEditView: View {
                     notify.sendNotification(
                         date: selectedDate,
                         type: "date",
-                        title: viewModel.title.isEmpty ? "Reminder" : viewModel.title,
-                        body: viewModel.description);
+                        title: viewModel.task.title.isEmpty ? "Reminder" : viewModel.task.title,
+                        body: viewModel.task.description);
                         scheduledDates[selectedDate] = true
                 }
             }
