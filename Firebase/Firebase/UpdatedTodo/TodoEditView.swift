@@ -23,6 +23,7 @@ struct TodoEditView: View {
     @State private var selectedDate = Date()
     @State private var scheduledDates: [Date: Bool] = [:]
     let notify = NotificationHandler()
+    let score = Score()
     
     @Environment(\.presentationMode) private var presentationMode
     @State var presentActionSheet = false
@@ -66,6 +67,7 @@ struct TodoEditView: View {
                         title: viewModel.task.title.isEmpty ? "Reminder" : viewModel.task.title,
                         body: viewModel.task.description);
                         scheduledDates[selectedDate] = true
+                    score.addScore()
                 }
             }
            
