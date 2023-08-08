@@ -25,9 +25,9 @@ Developed an iOS application
 * Break Time View
  * Displays 2 mini games for the user to take a break from productivity tasks serves as a cool down segment
 * Profile View
- * Displays users name and occupation the user can upload an image via URL currently
- * If the user is having trouble using the app they can use the tutorial button
- * Lastly the user can log out of their account
+   * Displays users name and occupation the user can upload an image via URL currently
+   * If the user is having trouble using the app they can use the tutorial button
+   * Lastly the user can log out of their account
 
 ### Mockup
 <img src="https://github.com/lxAnxietyxl/limit/blob/main/LimitMock/Apple%20iPhone%2011%20Pro%20Max%20Screenshot%207.png" width ="100"/> <img src="https://github.com/lxAnxietyxl/limit/blob/main/LimitMock/Apple%20iPhone%2011%20Pro%20Max%20Screenshot%200.png" width ="100"/> 
