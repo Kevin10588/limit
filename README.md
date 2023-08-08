@@ -32,11 +32,11 @@ There is a cool down section for users that can be utilized by playing two mini 
    * Lastly the user can log out of their account
 
 ### Mockup
-<img src="https://github.com/lxAnxietyxl/limit/blob/main/LimitMock/Apple%20iPhone%2011%20Pro%20Max%20Screenshot%207.png" width ="100"/> <img src="https://github.com/lxAnxietyxl/limit/blob/main/LimitMock/Apple%20iPhone%2011%20Pro%20Max%20Screenshot%200.png" width ="100"/> 
+<img src="https://github.com/lxAnxietyxl/limit/blob/main/LimitMock/Apple%20iPhone%2011%20Pro%20Max%20Screenshot%207.png" width ="100"/> <img src="https://github.com/lxAnxietyxl/limit/blob/main/LimitMock/Apple%20iPhone%2011%20Pro%20Max%20Screenshot%200.png" width ="100"/> <img src= "https://github.com/lxAnxietyxl/limit/blob/main/LimitMock/Apple%20iPhone%2011%20Pro%20Max%20Screenshot%201.png" width="100"/>
 
-<img src= "https://github.com/lxAnxietyxl/limit/blob/main/LimitMock/Apple%20iPhone%2011%20Pro%20Max%20Screenshot%201.png" width="100"/> <img src="https://github.com/lxAnxietyxl/limit/blob/main/LimitMock/Apple%20iPhone%2011%20Pro%20Max%20Screenshot%202.png" width ="100"/> <img src= "https://github.com/lxAnxietyxl/limit/blob/main/LimitMock/Apple%20iPhone%2011%20Pro%20Max%20Screenshot%203.png" width="100"/>
+ <img src="https://github.com/lxAnxietyxl/limit/blob/main/LimitMock/Apple%20iPhone%2011%20Pro%20Max%20Screenshot%202.png" width ="100"/> <img src= "https://github.com/lxAnxietyxl/limit/blob/main/LimitMock/Apple%20iPhone%2011%20Pro%20Max%20Screenshot%203.png" width="100"/> <img src="https://github.com/lxAnxietyxl/limit/blob/main/LimitMock/Apple%20iPhone%2011%20Pro%20Max%20Screenshot%204.png" width ="100"/>
 
-<img src="https://github.com/lxAnxietyxl/limit/blob/main/LimitMock/Apple%20iPhone%2011%20Pro%20Max%20Screenshot%204.png" width ="100"/> <img src= "https://github.com/lxAnxietyxl/limit/blob/main/LimitMock/Apple%20iPhone%2011%20Pro%20Max%20Screenshot%206.png" width="100"/> <img src= "https://github.com/lxAnxietyxl/limit/blob/main/LimitMock/Apple%20iPhone%2011%20Pro%20Max%20Screenshot%208.png" width="100"/> 
+ <img src= "https://github.com/lxAnxietyxl/limit/blob/main/LimitMock/Apple%20iPhone%2011%20Pro%20Max%20Screenshot%205.png" width="100"/> <img src= "https://github.com/lxAnxietyxl/limit/blob/main/LimitMock/Apple%20iPhone%2011%20Pro%20Max%20Screenshot%206.png" width="100"/> <img src= "https://github.com/lxAnxietyxl/limit/blob/main/LimitMock/Apple%20iPhone%2011%20Pro%20Max%20Screenshot%208.png" width="100"/> 
 
 
 ### Interactive Prototype
